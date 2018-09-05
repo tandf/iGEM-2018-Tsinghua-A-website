@@ -86,7 +86,7 @@ margin: 5em 0 2.5em 0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
-	font-size: 38px;
+	font-size: 60px;
 }
 .header-sub-text p
 {
@@ -115,10 +115,9 @@ margin: 5em 0 2.5em 0;
 	text-align:center;
 }
 /*--- header-bottom ----*/
-.logo
-{
+.logo{
 	float:left;
-	margin: 2% 0 1.2% 10%;
+	margin: 1.2% 0 0.6% 10%;
 }
 .logo h3
 {
@@ -133,6 +132,9 @@ margin: 5em 0 2.5em 0;
 }
 /*--- sicky Nav---*/
 /*---- Fixed Navigation ----*/
+div.top-nav{
+    height: 84.42px;
+}
 .top-nav ul{
 	margin:0;
 	padding:0;
@@ -153,13 +155,13 @@ margin: 5em 0 2.5em 0;
 	transition:0.5 ease;
 	text-transform:uppercase;
 }
-.top-nav ul li.active a
-{
+.top-nav ul li.active a{
 	color:#9F449B;
 }
 .top-nav ul li a:hover
 {
 	color:#9F449B;
+    font-size: 1.6em;
 	text-decoration:none;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -208,50 +210,37 @@ text-align: center;
 	display:inline-block;
 }
 .about-nav span.nav-icon{
-	width:67px;
-	height:70px;
-	display:inline-block;
-	background:url(../images/ve.png) no-repeat 0px 0px;
+	background:url(../images/Hardwareicon.png) no-repeat 0px 0px;
 }
 .about-nav1 span.nav-icon1{
-	width:67px;
-	height:67px;
-	display:inline-block;
-	background:url(../images/user.png) no-repeat 0px 0px;
+	background:url(../images/Collaborationicon.png) no-repeat 0px 0px;
 }
 .about-nav2 span.nav-icon2{
-	width:67px;
-	height:70px;
-	display:inline-block;
-	background:url(../images/pen.png) no-repeat 0px 0px;
+	background:url(../images/HPicon.png) no-repeat 0px 0px;
 }
-.about-nav3 span.nav-icon3
-{
-	width:67px;
-	height:67px;
-	display:inline-block;
-	background:url(../images/paper.png) no-repeat 0px 0px;
+.about-nav3 span.nav-icon3{
+	background:url(../images/Teamicon.png) no-repeat 0px 0px;
 }
-.about-nav4 span.nav-icon4
-{
-	width:67px;
-	height:70px;
-	display:inline-block;
-	background:url(../images/bobble.png) no-repeat 0px 0px;
+.about-nav4 span.nav-icon4{
+	background:url(../images/Experimenticon.png) no-repeat 0px 0px;
 }
-.about-nav5 span.nav-icon5
-{
-	width:67px;
-	height:70px;
-	display:inline-block;
-	background:url(../images/photo.png) no-repeat 0px 0px;
+.about-nav5 span.nav-icon5{
+	background:url(../images/Modelicon.png) no-repeat 0px 0px;
 }
-.about-nav6 span.nav-icon6
-{
-	width:67px;
-	height:70px;
+.about-nav6 span.nav-icon6{
+	background:url(../images/Attributionicon.png) no-repeat 0px 0px;
+}
+.about-nav span.nav-icon,
+.about-nav1 span.nav-icon1,
+.about-nav2 span.nav-icon2,
+.about-nav3 span.nav-icon3,
+.about-nav4 span.nav-icon4,
+.about-nav5 span.nav-icon5,
+.about-nav6 span.nav-icon6{
+	width:65px;
+	height:72px;
 	display:inline-block;
-	background:url(../images/photo.png) no-repeat 0px 0px;
+    background-size: contain;
 }
 .arrow-grid
 {
@@ -1203,20 +1192,6 @@ h6.b-animate.b-from-left.b-delay03
 	letter-spacing: 2px;
 	font-size: 45px;
 }
-.content-Get-in-touch small 
-{
-	color: #9F449B;
-	font-size: 45px;
-}
-.content-Get-in-touch span.portfolio
-{
-	background: url(../images/portfoliobg.png);
-	position: absolute;
-	width: 369px;
-	height: 114;
-	top: -67%;
-	right: 34%;
-}
 .watchmore{
 text-align:center;
 margin-top: 5em;
@@ -1272,12 +1247,6 @@ margin-top: 5em;
 	border-radius: 10px;
 	padding:1em 3em;
 }
-.Get-in-touch-right-grid 
-{
-	width: 75%;
-	margin: 0 auto;
-    font-size: 20px;
-}
 ul.contact-info{
     color: #222222;
     font-family: 'Lato', sans-serif;
@@ -1286,6 +1255,7 @@ ul.contact-info{
     font-weight: 400;
     list-style-type: none;
     list-style-image: none;
+    line-height: 1.6;
 }
 ul.contact-info a{
     text-decoration: none;
@@ -1300,9 +1270,24 @@ ul.contact-info a:hover{
     color: white;
     background-color: #3377aa;
 }
+.content-Get-in-touch small 
+{
+	color: #9F449B;
+	font-size: 45px;
+}
+.content-Get-in-touch span.portfolio
+{
+	background: url(../images/portfoliobg.png);
+	position: absolute;
+	width: 369px;
+	height: 114;
+	top: -67%;
+	right: 34%;
+}
 .Get-in-touch p
 {
-	font-size:18px;
+	font-size:38px;
+    font-weight: 100;
 	color: #5D5D5D;
 	font-family: 'Lato', sans-serif;
 }
@@ -1416,9 +1401,6 @@ padding-right: 4em;
 .header-top-grids {
 width: 42%;
 margin-left: 38%;
-}
-.logo {
-margin: 2% 0 1.2% 4%;
 }
 .top-nav ul {
 padding-left: 34%;
@@ -1638,10 +1620,6 @@ font-size: 1.2em;
 }
 .Get-in-touch-text {
 margin: 16% 0 9% 0;
-}
-.content-Get-in-touch span.portfolio {
-top: -67%;
-right: 27%;
 }
 .email {
 width: 100%;
