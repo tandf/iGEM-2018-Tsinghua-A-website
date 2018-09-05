@@ -21,6 +21,7 @@ body{
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
+    cursor: url('http://2018.igem.org/wiki/images/1/13/T--Tsinghua-A--cursor.png'), auto;
 }
 body a{
 	transition:0.5s all;
@@ -1239,29 +1240,10 @@ margin-top: 5em;
 	border-radius: 10px;
 	padding:1em 3em;
 }
-.Get-in-touch-grids 
-{
-	margin-bottom: 10%;
-}
-.Get-in-touch-grids form input[type="text"],.Get-in-touch-grids form textarea 
-{
-	width:100%;
-	padding: 3%;
-	color: #5D5D5D;
-	border: 1px solid #4E4E4E;
-	outline: none;
-	font-size: 18px;
-	margin-bottom:7%;
-	display: block;
-}
-.Get-in-touch-grids form input[type="text"]:hover,.Get-in-touch-grids form textarea:hover 
-{
-	border: 1px solid #A957A5;
-}
-.Get-in-touch-grids form textarea
-{
-	min-height:300px;
-	resize:none;
+.Get-in-touch{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 10%;
 }
 .email
 {
@@ -1294,14 +1276,37 @@ margin-top: 5em;
 {
 	width: 75%;
 	margin: 0 auto;
+    font-size: 20px;
 }
-.Get-in-touch-grids p
+ul.contact-info{
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    margin: 8% 0;
+    font-size: 21px;
+    font-weight: 400;
+    list-style-type: none;
+    list-style-image: none;
+}
+ul.contact-info a{
+    text-decoration: none;
+    color: #3377aa;
+    -ms-transition:     all 0.1s ease-out;
+    -moz-transition:    all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -o-transition:      all 0.1s ease-out;
+    transition:         all 0.1s ease-out;
+}
+ul.contact-info a:hover{
+    color: white;
+    background-color: #3377aa;
+}
+.Get-in-touch p
 {
 	font-size:18px;
 	color: #5D5D5D;
 	font-family: 'Lato', sans-serif;
 }
-.Get-in-touch-grids  h4
+.Get-in-touch  h4
 {
 	color: #222222;
 	font-family: 'Lato', sans-serif;
@@ -1309,7 +1314,7 @@ margin-top: 5em;
 	font-size: 21px;
 	font-weight: 700;
 }
-.Get-in-touch-grids span
+.Get-in-touch span
 {
 	color: #222222;
 	font-size:20px;
@@ -1317,7 +1322,7 @@ margin-top: 5em;
 	font-weight: 700;
 	display: block;
 }
-.Get-in-touch-grids small
+.Get-in-touch small
 {
 	color: #222222;
 	font-size:20px;	
@@ -1496,15 +1501,12 @@ margin: 9% 0;
 .tour-caption {
 height: 85.17%;
 }
-.Get-in-touch-grids p {
+.Get-in-touch p {
 line-height: 27px;
 }
-.Get-in-touch-grids h4 {
+.Get-in-touch h4 {
 margin: 8% 0;
 line-height: 28px;
-}
-.Get-in-touch-grids form textarea{
-min-height:200px;
 }
 .Get-in-touch-icons {
 margin-top: 7%;
@@ -1641,23 +1643,15 @@ margin: 16% 0 9% 0;
 top: -67%;
 right: 27%;
 }
-.Get-in-touch-grids form input[type="text"], .Get-in-touch-grids form textarea {
-padding: 2%;
-font-size: 15px;
-margin-bottom: 4%;
-}
 .email {
 width: 100%;
 text-align: center;
 margin-bottom: 7%;
 }
-.Get-in-touch-right-grid {
-width: 100%;
-}
-.Get-in-touch-grids {
+.Get-in-touch {
 margin-bottom: 6%;
 }
-.Get-in-touch-grids h4 {
+.Get-in-touch h4 {
 margin: 2% 0;
 font-size: 19px;
 }
@@ -1813,32 +1807,13 @@ font-size: 15px;
 .content-Get-in-touch span.portfolio {
 right: 17%;
 }
-.Get-in-touch-grids form{
-width:100%;
-}
-.Get-in-touch-grids form input[type="text"]{
-width: 47%;
-font-size: 14px;
-margin-bottom:5%;
-float:left;
-}
-.Get-in-touch-grids form textarea {
-width:100%;
-min-height: 148px;
-font-size:14px;
-margin-bottom:5%;
-float:left;
-}
-.Get-in-touch-grids form input[type="text"]:nth-child(2){
-margin-left:2%;
-}
 .email {
 margin-top: 1em;
 }
 .email a {
 font-size: 16px;
 }
-.Get-in-touch-grids p {
+.Get-in-touch p {
 line-height: 23px;
 font-size: 17px;
 overflow: hidden;
@@ -2090,33 +2065,18 @@ right: 9%;
 font-size: 27px;
 margin-top:20%;
 }
-.Get-in-touch-grids form {
-width: 100%;
-margin-top: 25%;
-}
-.Get-in-touch-grids form textarea{
-min-height: 80px;
-font-size:11px;
-}
-.Get-in-touch-grids form input[type="text"]{
-font-size:11px;
-width: 100%;
-}
-.Get-in-touch-grids form input[type="text"]:nth-child(2){
-margin-left:0%;
-}
 .email a {
 font-size: 12px;
 }
-.Get-in-touch-grids p {
+.Get-in-touch p {
 font-size: 13px;
 margin-top: 13%;
 }
-.Get-in-touch-grids h4 {
+.Get-in-touch h4 {
 line-height:20px;
 font-size: 13px;
 }
-.Get-in-touch-grids span,.Get-in-touch-grids small {
+.Get-in-touch span,.Get-in-touch small {
 font-size: 13px;
 }
 }
