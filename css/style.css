@@ -21,7 +21,7 @@ body{
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
-    cursor: url('http://2018.igem.org/wiki/images/1/13/T--Tsinghua-A--cursor.png'), auto;
+    cursor: url('../images/mouseicon.png') 5 5, auto;
 }
 body a{
 	transition:0.5s all;
