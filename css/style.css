@@ -117,33 +117,31 @@ margin: 5em 0 2.5em 0;
 /*--- header-bottom ----*/
 .logo{
 	float:left;
-	margin: 1.2% 0 0.6% 10%;
+    margin-top: 13px;
+    margin-left: 40px;
 }
-.logo h3
-{
-	font-family: 'Open Sans', sans-serif;
-	color:#676767;
-}
-.logo small
-{
-	font-family: 'Open Sans', sans-serif;
-	color:#9F449B;
-	font-size:22px;
+.logo img.nav-logo{
+    height: 60px;
 }
 /*--- sicky Nav---*/
 /*---- Fixed Navigation ----*/
 div.top-nav{
     height: 84.42px;
 }
+.top-nav nav{
+    background-color:#fff;
+    height:80px;
+}
 .top-nav ul{
+    height:80px;
 	margin:0;
 	padding:0;
-	background:#fff;
 	text-align:center;
+    background-color:#fff;
 }
 .top-nav ul li{
 	display:inline-block;
-	margin-top:2.5em;
+    line-height:80px;
 }
 .top-nav ul li a{
 	padding:0 0 0 1.5em;
@@ -161,8 +159,8 @@ div.top-nav{
 .top-nav ul li a:hover
 {
 	color:#9F449B;
+    text-decoration:underline;
     font-size: 1.6em;
-	text-decoration:none;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -175,6 +173,20 @@ div.top-nav{
 	width: 100%;
 	margin: 0 auto;
 	z-index: 1;
+}
+.fixed ul{
+	transition:.3s;
+    transition-property: box-shadow;
+    box-shadow:
+        0 4px 5px 0px rgba(0, 0, 0, 0.08),
+        0 1px 10px 0px rgba(0, 0, 0, 0.04),
+        0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+.fixed:hover ul{
+    box-shadow:
+        0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12),
+        0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 .nav-palceholder{
 	margin:0 0 40px 0;
@@ -1520,9 +1532,6 @@ padding-right:0;
 }
 .left-grid,.right-grid{
 float:left;
-}
-.logo {
-margin: 2% 0 1.2% 2%;
 }
 .top-nav ul {
 padding-left: 0%;
