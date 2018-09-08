@@ -17,11 +17,13 @@
 }
 
 body{
+    min-width:1200px;
 	margin:0;
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
     cursor: url('../images/mouseicon.png') 5 5, auto;
+    /*<NOTE> animation*/
 }
 body a{
 	transition:0.5s all;
@@ -133,7 +135,7 @@ div.top-nav{
     height:80px;
 }
 .top-nav ul{
-    height:80px;
+    /*height:80px;*/
 	margin:0;
 	padding:0;
 	text-align:center;
@@ -1372,6 +1374,13 @@ color:#9F449B;
 .content-portfolio p a:hover{
 color:#646064;
 }
+/*----- footer ----*/
+.footer{
+    text-align:center;
+}
+.footer img{
+    margin: 40px 0 20px;
+}
 /*----- to-top ----*/
 #toTop {
 	display: none;
@@ -1398,28 +1407,11 @@ color:#646064;
 }
 /*----- responsive-design ------*/
 @media (max-width:1024px){
-.about-nav5,.about-nav4,.about-nav3,.about-nav2,.about-nav1,.about-nav{
-	width: 61% !important;
-}
-.about-nav1,.about-nav{
-/*margin-left: 14%;*/
-}
 .arrow-grid {
 width: 20%;
 }
-.about-nav4 a,.about-nav5 a{
-padding-right: 4em;
-}
 .header-top-grids {
-width: 42%;
 margin-left: 38%;
-}
-.top-nav ul {
-padding-left: 34%;
-}
-.top-nav ul li {
-margin-top: 2em;
-margin-bottom: 2em;
 }
 .top-nav ul li a {
 padding: 0 0 0 1.5em;
@@ -1517,10 +1509,10 @@ margin-left: 34%;
 width: 100%;
 }
 .about-nav5, .about-nav4 {
-width: 76% !important;
+/*width: 76% !important;*/
 }
 .about-nav3, .about-nav2, .about-nav1, .about-nav {
-width: 49% !important;
+/*width: 49% !important;*/
 }
 .about-nav1,.about-nav {
 /*margin-left: 0%;*/
