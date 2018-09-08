@@ -1,0 +1,58 @@
+div.content{
+    text-align:center;
+    font-size:24px;
+}
+div.content div.page-head{
+    margin:80px 0;
+    text-align:right;
+    border-right: 5px solid #393939;
+    padding: 20px 20px 0px 0px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+div.content div.page-head .head-title{
+    font-size:100px;
+    line-height:100px;
+    color:#9a6421;
+}
+div.content div.page-head .head-subtitle{
+    font-size:50px;
+    line-height:50px;
+    color:#000;
+}
+div.content div.page-content{
+    margin:100px auto;
+}
+div.footer{
+    text-align:left;
+    background:#555;
+}
+div.footer div.footer-left-col,div.footer-right-col{
+    width:50%;
+    float:left;
+}
+div.footer div.footer-left-col{
+}
+div.footer div.footer-left-col img{
+    margin-left:15%;
+}
+div.footer div.footer-right-col{
+    text-align:center;
+}
+div.footer div.footer-right-col p{
+    font-size:40px;
+    color:#fff;
+}
+div.footer div.footer-right-col ul.contact-info{
+    margin:20px;
+}
+div.footer div.footer-right-col li{
+    color:#fff;
+}
+div.footer div.footer-right-col li a{
+    color: #74bcf3;
+}
+div.footer div.footer-right-col li a:hover{
+    color: #555;
+    background-color: #74bcf3;
+}

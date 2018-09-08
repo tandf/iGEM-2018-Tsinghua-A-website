@@ -16,3 +16,15 @@ $(document).ready(function(){
 		$(this).parent().siblings().removeClass("active");
 	});
 });
+$(document).ready(function(){
+    $(window).resize(function(){
+        var scale = window.innerWidth / 1200;
+        if(scale < 1){
+            $(".fixed").css("zoom", scale);
+            //alert("aa");
+        }
+        else{
+            $(".fixed").css("zoom", 1);
+        }
+    })
+});

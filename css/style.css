@@ -15,6 +15,9 @@
 * ::-webkit-scrollbar-thumb {
     background:rgba(10,10,10,0.4);
 }
+img {
+    user-select:none;
+}
 
 body{
     min-width:1200px;
@@ -280,10 +283,6 @@ text-align: center;
 }
 
 /*--- content ----*/
-.content
-{
-	background:#EEEEEE;
-}
 .row 
 {
 	margin:10% 0;
@@ -1232,7 +1231,7 @@ margin-top: 5em;
 .Get-in-touch{
     text-align: center;
     width: 70%;
-    margin: 0 auto 10%;
+    margin: 0 auto 4%;
 }
 .email
 {
@@ -1377,6 +1376,7 @@ color:#646064;
 /*----- footer ----*/
 .footer{
     text-align:center;
+    padding: 60px 0 0;
 }
 .footer img{
     margin: 40px 0 20px;
