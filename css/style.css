@@ -25,8 +25,20 @@ body{
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
-    cursor: url('../images/mouseicon.png') 5 5, auto;
+    animation: animate 0.7s infinite;
+    /*cursor: url('../images/mouseicon.png') 5 5, auto;*/
     /*<NOTE> animation*/
+}
+@keyframes animate{
+    0%{ cursor: url("../images/dna1.png") 2 2, auto; }
+    12.5%{ cursor: url("../images/dna2.png") 2 2, auto; }
+    25%{ cursor: url("../images/dna3.png") 2 2, auto; }
+    37.5%{ cursor: url("../images/dna4.png") 2 2, auto; }
+    50%{ cursor: url("../images/dna5.png") 2 2, auto; }
+    62.5%{ cursor: url("../images/dna6.png") 2 2, auto; }
+    75%{ cursor: url("../images/dna7.png") 2 2, auto; }
+    87.5%{ cursor: url("../images/dna8.png") 2 2, auto; }
+    100%{ cursor: url("../images/dna1.png") 2 2, auto; }
 }
 body a{
 	transition:0.5s all;
