@@ -156,24 +156,24 @@ div.top-nav{
 	text-align:center;
     background-color:#fff;
 }
-.top-nav ul li{
+.top-nav > nav > ul > li{
 	display:inline-block;
     line-height:80px;
 }
-.top-nav ul li a{
-	padding:0 0 0 1.5em;
+.top-nav > nav > ul > li > a{
+	padding:0 1.5em 0 0;
 	display:block;
 	text-decoration:none;
-	color:#000;
+	color:#333;
 	font-weight:400;
 	font-size:1.2em;
-	transition:0.5 ease;
+	transition:0.5s ease;
 	text-transform:uppercase;
 }
-.top-nav ul li.active a{
+.top-nav > nav > ul > li.active > a{
 	color:#9F449B;
 }
-.top-nav ul li a:hover
+.top-nav > nav > ul > li > a:hover, .dropdown-menu:hover + a
 {
 	color:#9F449B;
     text-decoration:underline;
@@ -1417,6 +1417,26 @@ color:#646064;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
 }
+p#abstract{
+    font-size:1.7em;
+    text-align:left;
+    margin-top:80;
+}
+
+ul.dropdown-menu{
+    border-top-width:0;
+}
+
+.fixed li.dropdown:hover > ul, .dropdown-menu:hover{
+    display:block;
+}
+
+ul.dropdown-menu li{
+    font-size:1.2em;
+    text-transform:uppercase;
+    text-align:left;
+}
+
 /*----- responsive-design ------*/
 @media (max-width:1024px){
 .arrow-grid {
@@ -1425,7 +1445,7 @@ width: 20%;
 .header-top-grids {
 margin-left: 38%;
 }
-.top-nav ul li a {
+.top-nav > nav > ul > li a {
 padding: 0 0 0 1.5em;
 font-size:1.1em;
 }
@@ -1540,7 +1560,7 @@ float:left;
 .top-nav ul {
 padding-left: 0%;
 }
-.top-nav ul li a {
+.top-nav > nav > ul > li a {
 padding: 0 0 0 1em;
 font-size: 1em;
 }
@@ -1690,12 +1710,12 @@ margin-left: 17%;
 .top-nav{
 	float:none;
 }
-.top-nav ul li{
+.top-nav > nav > ul > li{
 	display:block;
 	float:none;
 	margin: 0em;
 }
-.top-nav ul li a{
+.top-nav > nav > ul > li a{
 	padding:0.5em;
 	border-bottom:1px solid #999;
 	color:#000;
