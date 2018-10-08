@@ -26,8 +26,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
     animation: animate 0.7s infinite;
-    /*cursor: url('../images/mouseicon.png') 5 5, auto;*/
-    /*<NOTE> animation*/
+    overflow-x: hidden;
 }
 @keyframes animate{
     0%{ cursor: url("../images/dna1.png") 2 2, auto; }
@@ -1435,7 +1434,7 @@ ul.dropdown-menu{
     visibility:hidden;
 }
 
-.fixed li.dropdown:hover > ul.dropdown-menu, .dropdown-menu:hover{
+li.dropdown:hover > ul.dropdown-menu, .dropdown-menu:hover{
     visibility:visible;
     opacity:1;
 }
