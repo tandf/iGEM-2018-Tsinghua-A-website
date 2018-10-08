@@ -245,7 +245,7 @@ text-align: center;
 	background:url(../images/Collaborationicon.png) no-repeat 0px 0px;
 }
 .about-nav2 span.nav-icon2{
-	background:url(../images/HPicon.png) no-repeat 0px 0px;
+	background:url(../images/HumanPracticeicon.png) no-repeat 0px 0px;
 }
 .about-nav3 span.nav-icon3{
 	background:url(../images/Teamicon.png) no-repeat 0px 0px;
@@ -1312,7 +1312,7 @@ ul.contact-info a:hover{
 .Get-in-touch p
 {
 	font-size:38px;
-    font-weight: 100;
+    font-weight: 300;
 	color: #5D5D5D;
 	font-family: 'Lato', sans-serif;
 }
