@@ -1435,7 +1435,7 @@ ul.dropdown-menu{
     visibility:hidden;
 }
 
-.fixed li.dropdown:hover > ul, .dropdown-menu:hover{
+.fixed li.dropdown:hover > ul.dropdown-menu, .dropdown-menu:hover{
     visibility:visible;
     opacity:1;
 }
