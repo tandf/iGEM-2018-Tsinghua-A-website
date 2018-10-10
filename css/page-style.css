@@ -32,36 +32,37 @@ div.content div.page-content > p{
     line-height:160%;
 }
 
-div.footer{
+
+div.pagefooter{
     text-align:left;
     background:#555;
 }
-div.footer div.footer-left-col,div.footer-right-col{
+div.pagefooter div.footer-left-col,div.footer-right-col{
     width:50%;
     float:left;
 }
-div.footer div.footer-left-col{
+div.pagefooter div.footer-left-col{
 }
-div.footer div.footer-left-col img{
+div.pagefooter div.footer-left-col img{
     margin-left:15%;
 }
-div.footer div.footer-right-col{
+div.pagefooter div.footer-right-col{
     text-align:center;
 }
-div.footer div.footer-right-col p{
+div.pagefooter div.footer-right-col p{
     font-size:40px;
     color:#fff;
 }
-div.footer div.footer-right-col ul.contact-info{
+div.pagefooter div.footer-right-col ul.contact-info{
     margin:20px;
 }
-div.footer div.footer-right-col li{
+div.pagefooter div.footer-right-col li{
     color:#fff;
 }
-div.footer div.footer-right-col li a{
+div.pagefooter div.footer-right-col li a{
     color: #74bcf3;
 }
-div.footer div.footer-right-col li a:hover{
+div.pagefooter div.footer-right-col li a:hover{
     color: #555;
     background-color: #74bcf3;
 }
