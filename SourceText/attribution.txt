@@ -1,0 +1,67 @@
+All members of Team Tsinghua-A participated in the project design and the public engagement activities held in China Science and Technology Museum
+
+Team member
+
+Li Yaqi\Department of Clinical Medicine,Tsinghua University \Team leader,fund application management、did experiments、team management、design the protocol of experiments、design the team suits
+
+Lu Keming\Department of Automation,Tsinghua University\Modeling,and made contributions to Wiki frame design and fund application
+
+Guan Ai\Department of Clinical Medicine,Tsinghua University\ Fund and documents management、design the Human Practice activities in China Science and Technology Museum、did the experiments of yeast modification
+
+Yu Si\Department of Clinical Medicine,Tsinghua University\ designed and did the experiments of yeast modification
+
+Liu Jie\School of Life Sciences,Tsinghua University\designed and did the experiments of yeast modification
+
+Jin Yunfan\School of Life Sciences,Tsinghua University\ designed and did the experiments of yeast modification
+
+Hu Xinzhi\School of Life Sciences,Tsinghua University\ participated in the yeast modification experiments
+
+Luo Zongrui\School of Life Sciences,Tsinghua University\ participated in the yeast modification experiments
+
+Li Shiqi\School of Life Sciences,Tsinghua University \Did experiments of receptor modify
+
+Li Jiangfan\Department of Automation,Tsinghua University \Designed and contructed the hardware
+
+Li Chengkun\Department of Automation,Tsinghua University \Leader of Public Engagement��participated in the development of hardware and experiments
+
+Wu Fan\Department of Automation,Tsinghua University \Participated in the modeling and  Human Practise activities of CCiC
+
+Zuo Duyun\Department of Automation,Tsinghua University\Made contributions to the model constructions and computation
+
+Tang Likai\Department of Automation,Tsinghua University\Partaked some of the experiments
+
+Liu Qiaochu\School of Life Sciences,Tsinghua University\ Participated in the experiments、art designs of wiki、public engagement in China Science and Technology Museum
+
+Advisors
+
+Wang Xiaowo\Department of Automation,Tsinghua University\Advisor who provides instruction and guidance of modeling 
+
+Xie Zhen\National Information Laboratory\Advisor who tutors the experiments
+
+Li Peng\School of life science,Tsinghua University\ Advisor who provide the reagents and help us to design the protocols
+
+Li Chun\Beijing Institute of Technology \PI of the laboratory of Team BIT-China2017 who provides the engineering bacteria cen.pk2-1C
+
+Helping hands
+
+Huang Yuntang\School of Art,Tsinghua University \produced our team video
+
+Luo Xuehui \School of Art,Tsinghua University\produced our team video
+
+Hu Pengjin\Beijing Institute of Technology\Student leader of BIT_China2017 who provided the instruction of  yeast transformation protocol and helped to bring out the collaboration with BIT-China
+
+Huang Tianze\School of life science,Tsinghua University\Team leader of Team Tsinghua who made contributions to the public engagement collaboration in China Science and Technology Museum
+
+Zhao Yanxue\Peking Union Medical College Hospital \Shared knowledge of allergy testing used in hospital and gave advice about application fields of our project
+
+Gu Jianqin\Peking Union Medical College Hospital\Clinical doctor of Allergy who provided significative suggestions to our project and shared research experience about allergy with us 
+
+Luo Yunpeng\Department of Automation\Wiki design and Edit 
+
+Zhou Ziyi\Department of Automation\Document translator 
+
+ 
+
+ 
+
+ 
