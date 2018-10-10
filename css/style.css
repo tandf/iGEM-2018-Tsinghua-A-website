@@ -165,7 +165,7 @@ div.top-nav{
 	text-decoration:none;
 	color:#333;
 	font-weight:400;
-	font-size:1.2em;
+	font-size:18px;
 	transition:0.5s ease;
 	text-transform:uppercase;
 }
@@ -176,7 +176,7 @@ div.top-nav{
 {
 	color:#9F449B;
     text-decoration:underline;
-    font-size: 1.6em;
+    font-size: 24px;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -185,7 +185,7 @@ div.top-nav{
 }
 .fixed{
 	position: fixed;
-	top: 0;
+	top: 16px;
 	width: 100%;
 	margin: 0 auto;
 	z-index: 1;

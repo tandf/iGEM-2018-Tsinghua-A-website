@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 });
         </script>
         <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
         <!--- fonts --->
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
@@ -28,10 +29,10 @@ jQuery(document).ready(function($) {
     <body>
         <!-- Sticky Nav -->
         <div id="header-nav" class="header-nav">
-            <div class="top-nav">		
+            <div class="top-nav">       
                 <nav>
                     <div class="logo">
-                    <a href="#home" class="scroll"><img src="images/logo.png" alt="" class="nav-logo"/></a>
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
                     </div>
                     <span class="menu"></span>
                     <ul>
@@ -55,7 +56,7 @@ jQuery(document).ready(function($) {
                                 <li><a href="">Achievements</a></li>
                             </ul>
                             <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
-                        </li>	
+                        </li>   
                         <li class="dropdown">
                             <ul class="dropdown-menu">
                                 <li><a href="">Background</a></li>
@@ -63,7 +64,7 @@ jQuery(document).ready(function($) {
                                 <li><a href="">Computing and Result</a></li>
                             </ul>
                             <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
-                        </li>		
+                        </li>       
                         <li>
                             <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
                         </li>
@@ -89,7 +90,6 @@ $("span.menu").click(function(){
 });
             </script>
             <!--script-nav-->
-            <script src="js/myscript.js"> </script>
         </div>
         <!-- top-nav -->
         <!-- Sticky Nav -->
@@ -132,7 +132,7 @@ $("span.menu").click(function(){
         <!-- footer -->
         <div class="footer">
             <div class="footer-left-col">
-                <a href="index.html"><img src="images/logo.png" alt="" height="200" width="400"/> </a>
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
             </div>
             <div class="footer-right-col">
                 <p> Contact us </p>
@@ -151,18 +151,17 @@ $("span.menu").click(function(){
         <script type="text/javascript">
 $(document).ready(function() {
     /*
-       var defaults = {
-       containerID: 'toTop', // fading element id
-       containerHoverID: 'toTopHover', // fading element hover id
-       scrollSpeed: 1200,
-       easingType: 'linear' 
-       };
+               var defaults = {
+                      containerID: 'toTop', // fading element id
+                             containerHoverID: 'toTopHover', // fading element hover id
+                                    scrollSpeed: 1200,
+                                           easingType: 'linear' 
+                                                  };
      */
     $().UItoTop({ easingType: 'easeOutQuart' });
 });
         </script>
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
         <!-- toTopHover -->
-
     </body>
 </html>

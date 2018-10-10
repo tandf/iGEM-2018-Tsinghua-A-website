@@ -1,3 +1,4 @@
+(function($){
 $(document).ready(function() {
 	 var navoffeset=$("nav").offset().top;
 	 $(window).scroll(function(){
@@ -28,3 +29,5 @@ $(document).ready(function(){
         }
     })
 });
+})(jQuery);
+
