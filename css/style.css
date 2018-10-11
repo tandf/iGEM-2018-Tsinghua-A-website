@@ -28,6 +28,9 @@ body{
     animation: animate 0.7s infinite;
     overflow-x: hidden;
 }
+body.page-Team_Tsinghua-A{
+    background: #fff;
+}
 @keyframes animate{
     0%    { cursor: url("http://2018.igem.org/wiki/images/1/19/T--Tsinghua-A--mouseDNA1.png") 2 2, auto; }
     12.5% { cursor: url("http://2018.igem.org/wiki/images/4/46/T--Tsinghua-A--mouseDNA2.png") 2 2, auto; }
@@ -1405,7 +1408,7 @@ color:#646064;
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/to-top1.png") no-repeat 0px 0px;
+	background: url("http://2018.igem.org/wiki/images/f/f7/T--Tsinghua-A--to-top1.png") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 40px;
