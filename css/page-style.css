@@ -91,18 +91,18 @@ div.attributionItem div span.name + span.org{
     margin-left: 20px;
     font-size: 17px;
 }
-div.attributionItem div#QA{
-    margin: 50px 0;
+div#QA{
+    margin: 100px 0;
     font-size: 24px;
 }
-div.attributionItem > div#QA > div.dialog{
+div#QA > div.dialog{
     margin: 20px 0;
 }
-div.attributionItem > div#QA > div.dialog > div.question{
+div#QA > div.dialog > div.question{
     margin: 5px 0;
     font-style: italic;
     color: #700;
 }
-div.attributionItem > div#QA > div.dialog > div.answer{
+div#QA > div.dialog > div.answer{
     margin: 5px 0;
 }
