@@ -11,23 +11,23 @@ $(document).ready(function() {
 	 });
 	 
 });
+
 $(document).ready(function(){
 	$("nav ul li a").click(function(){
 		$(this).parent().addClass("active");
 		$(this).parent().siblings().removeClass("active");
 	});
 });
+
+var nav_resize = function(){
+        var scale = window.innerWidth / 1500;
+        if(scale < 1){ $("nav").css("zoom", scale); }
+        else{ $("nav").css("zoom", 1); }
+}
 $(document).ready(function(){
-    $(window).resize(function(){
-        var scale = window.innerWidth / 1200;
-        if(scale < 1){
-            $(".fixed").css("zoom", scale);
-            //alert("aa");
-        }
-        else{
-            $(".fixed").css("zoom", 1);
-        }
-    })
+    nav_resize();
+    $(window).resize(nav_resize);
 });
+
 })(jQuery);
 
