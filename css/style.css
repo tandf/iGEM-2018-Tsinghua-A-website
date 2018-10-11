@@ -1281,7 +1281,7 @@ ul.contact-info{
     list-style-image: none;
     line-height: 1.6;
 }
-ul.contact-info a{
+ul.contact-info a#mailto{
     text-decoration: none;
     color: #3377aa;
     -ms-transition:     all 0.1s ease-out;
@@ -1290,7 +1290,7 @@ ul.contact-info a{
     -o-transition:      all 0.1s ease-out;
     transition:         all 0.1s ease-out;
 }
-ul.contact-info a:hover{
+ul.contact-info a#mailto:hover{
     color: white;
     background-color: #3377aa;
 }

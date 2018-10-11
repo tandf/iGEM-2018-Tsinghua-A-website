@@ -59,10 +59,10 @@ div.pagefooter div.footer-right-col ul.contact-info{
 div.pagefooter div.footer-right-col li{
     color:#fff;
 }
-div.pagefooter div.footer-right-col li a{
+div.pagefooter div.footer-right-col li a#mailto{
     color: #74bcf3;
 }
-div.pagefooter div.footer-right-col li a:hover{
+div.pagefooter div.footer-right-col li a#mailto:hover{
     color: #555;
     background-color: #74bcf3;
 }
