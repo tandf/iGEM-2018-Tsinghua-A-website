@@ -62,6 +62,7 @@ div.pagefooter div.footer-right-col li{
 }
 div.pagefooter div.footer-right-col li a#mailto{
     color: #74bcf3;
+    padding-right: 0;
 }
 div.pagefooter div.footer-right-col li a#mailto:hover{
     color: #555;
