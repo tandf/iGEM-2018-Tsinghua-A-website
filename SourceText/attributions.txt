@@ -1,6 +1,6 @@
 All members of Team Tsinghua-A participated in the project design and the public engagement activities held in China Science and Technology Museum
 
-Team member
+Team member\\Subtitle
 
 Li Yaqi\Department of Clinical Medicine,Tsinghua University \Team leader,fund application management、did experiments、team management、design the protocol of experiments、design the team suits
 
@@ -32,17 +32,41 @@ Tang Likai\Department of Automation,Tsinghua University\Partaked some of the exp
 
 Liu Qiaochu\School of Life Sciences,Tsinghua University\ Participated in the experiments、art designs of wiki、public engagement in China Science and Technology Museum
 
-Advisors
+Advisors\\Subtitle
 
 Wang Xiaowo\Department of Automation,Tsinghua University\Advisor who provides instruction and guidance of modeling 
 
 Xie Zhen\National Information Laboratory\Advisor who tutors the experiments
 
-Li Peng\School of life science,Tsinghua University\ Advisor who provide the reagents and help us to design the protocols
+Li Peng\School of life sciences,Tsinghua University\ Advisor who provide the reagents and help us to design the protocols
 
 Li Chun\Beijing Institute of Technology \PI of the laboratory of Team BIT-China2017 who provides the engineering bacteria cen.pk2-1C
 
-Helping hands
+Funding and General support\\Subtitle
+
+Department of Automation, Tsinghua University
+
+School of Life Sciences, Tsinghua University
+
+Lab support\\Subtitle
+
+Xie Zhen\National Information Laboratory
+
+Human practice support\\Subtitle
+
+The CCiC
+
+Peking Union Medical College
+
+China Science and Technology Museum
+
+Wiki support\\Subtitle
+
+Luo Yunpeng\Department of Automation\Wiki design and Edit 
+
+Zhou Ziyi\Department of Automation\Document translator 
+
+Helping hands\\Subtitle
 
 Huang Yuntang\School of Art,Tsinghua University \produced our team video
 
@@ -56,12 +80,17 @@ Zhao Yanxue\Peking Union Medical College Hospital \Shared knowledge of allergy t
 
 Gu Jianqin\Peking Union Medical College Hospital\Clinical doctor of Allergy who provided significative suggestions to our project and shared research experience about allergy with us 
 
-Luo Yunpeng\Department of Automation\Wiki design and Edit 
+Synthesis biology class in Tsinghua University\\Subtitle
 
-Zhou Ziyi\Department of Automation\Document translator 
-
- 
-
- 
-
- 
+The synthesis biology cource in Tsinghua is an interdiscipline course between automation and life science in Tsinghua.
+The teachers who teached us are our advisors Xie Zhen and Wang Xiaowo 
+1.When did you start this course?
+The autumn term in 2017.
+2.Are the syllabus and course materials freely available online?
+The syllabus and materils are not availible.
+3.When did you start your brainstorming?
+Feburary 2018
+4.When did you start in the lab?
+June 2018
+5.When did you start working on your project?
+June 2018

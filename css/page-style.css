@@ -1,5 +1,12 @@
 body{
     background:#eee8aa60;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    margin: 60px 0 30px;
+    font-family: 'Monda', sans-serif;
 }
 
 div.content{
@@ -24,7 +31,7 @@ div.content div.page-head .head-subtitle{
     color:#000;
 }
 div.content div.page-content{
-    margin:100px 60px;
+    margin:100px 0px;
     text-align:left;
 }
 div.content div.page-content > p{
@@ -67,4 +74,35 @@ div.pagefooter div.footer-right-col li a#mailto{
 div.pagefooter div.footer-right-col li a#mailto:hover{
     color: #555;
     background-color: #74bcf3;
+}
+
+div.attributionItem{
+    font-size: 20px;
+    margin: 20px 0;
+}
+div.attributionItem div span.name{
+    font-style: italic;
+    font-weight: 700;
+}
+div.attributionItem span.org{
+    font-weight: 700;
+}
+div.attributionItem div span.name + span.org{
+    margin-left: 20px;
+    font-size: 17px;
+}
+div.attributionItem div#QA{
+    margin: 50px 0;
+    font-size: 24px;
+}
+div.attributionItem > div#QA > div.dialog{
+    margin: 20px 0;
+}
+div.attributionItem > div#QA > div.dialog > div.question{
+    margin: 5px 0;
+    font-style: italic;
+    color: #700;
+}
+div.attributionItem > div#QA > div.dialog > div.answer{
+    margin: 5px 0;
 }
