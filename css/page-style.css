@@ -36,6 +36,7 @@ div.content div.page-content > p{
 div.pagefooter{
     text-align:left;
     background:#555;
+    margin-bottom: -20px;
 }
 div.pagefooter div.footer-left-col,div.footer-right-col{
     width:50%;
