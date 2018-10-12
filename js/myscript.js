@@ -21,8 +21,8 @@ $(document).ready(function(){
 
 var nav_resize = function(){
         var scale = window.innerWidth / 1500;
-        if(scale < 1){ $("nav").css("zoom", scale); }
-        else{ $("nav").css("zoom", 1); }
+        if(scale < 1){ $("div.header-nav").css("zoom", scale); }
+        else{ $("div.header-nav").css("zoom", 1); }
 }
 $(document).ready(function(){
     nav_resize();

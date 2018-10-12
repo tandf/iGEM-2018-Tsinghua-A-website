@@ -52,11 +52,11 @@ div.content div.page-content div img{
         0 2px 4px -1px rgba(0, 0, 0, 0.40);
 }
 div.content div.page-content div.img1 img{
-    width: 900px;
+    width: 80%;
 }
 div.content div.page-content div.img2 img{
     margin: 20px;
-    width: 420px;
+    width: 40%;
 }
 
 div.pagefooter{
