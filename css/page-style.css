@@ -41,11 +41,20 @@ div.content div.page-content > p{
     margin:15px 0;
     line-height:160%;
 }
-div.content div.page-content > div{
+div.content div.page-content > div.img{
     text-align: center;
     margin: 50px 0;
 }
-div.content div.page-content div img{
+div.content div.page-content a{
+    text-decoration: underline;
+    font-style: italic;
+    color: #005;
+}
+div.content div.page-content a:hover{
+    color: #00c;
+    font-size: 101%;
+}
+div.content div.page-content img{
     box-shadow:
         0 4px 5px 0px rgba(0, 0, 0, 0.20),
         0 1px 10px 0px rgba(0, 0, 0, 0.10),
