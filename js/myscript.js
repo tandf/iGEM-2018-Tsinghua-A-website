@@ -29,7 +29,9 @@ $(document).ready(function(){
     $(window).resize(nav_resize);
 });
 
-console.log("a work by tandf\ngithub:https://github.com/tandf")
+$(document).ready(function(){
+    console.log("a work by tandf\ngithub:https://github.com/tandf")
+});
 
 })(jQuery);
 
