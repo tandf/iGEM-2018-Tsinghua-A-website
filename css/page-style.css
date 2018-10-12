@@ -12,6 +12,9 @@ h2{
 div.content{
     font-size:20px;
 }
+div.content div.head-pic img{
+    width: 100%;
+}
 div.content div.page-head{
     margin:80px 0;
     text-align:right;
@@ -38,7 +41,23 @@ div.content div.page-content > p{
     margin:15px 0;
     line-height:160%;
 }
-
+div.content div.page-content > div{
+    text-align: center;
+    margin: 50px 0;
+}
+div.content div.page-content div img{
+    box-shadow:
+        0 4px 5px 0px rgba(0, 0, 0, 0.20),
+        0 1px 10px 0px rgba(0, 0, 0, 0.10),
+        0 2px 4px -1px rgba(0, 0, 0, 0.40);
+}
+div.content div.page-content div.img1 img{
+    width: 900px;
+}
+div.content div.page-content div.img2 img{
+    margin: 20px;
+    width: 420px;
+}
 
 div.pagefooter{
     text-align:left;
