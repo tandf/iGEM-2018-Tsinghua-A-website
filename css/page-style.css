@@ -3,12 +3,6 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-h2{
-    font-size: 40px;
-    margin: 60px 0 30px;
-    font-family: 'Monda', sans-serif;
-}
-
 div.content{
     font-size:20px;
 }
@@ -37,13 +31,10 @@ div.content div.page-content{
     margin:100px 0px;
     text-align:left;
 }
-div.content div.page-content > p{
+div.content div.page-content p,
+div.content div.page-content li{
     margin:15px 0;
     line-height:160%;
-}
-div.content div.page-content > div.img{
-    text-align: center;
-    margin: 50px 0;
 }
 div.content div.page-content a{
     text-decoration: underline;
@@ -54,18 +45,67 @@ div.content div.page-content a:hover{
     color: #00c;
     font-size: 101%;
 }
-div.content div.page-content img{
+div.content div.page-content div.img{
+    width: 80%;
+    margin: 30px auto;
+}
+div.content div.page-content div.img div.imgcard{
+    margin: 20px auto;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
     box-shadow:
         0 4px 5px 0px rgba(0, 0, 0, 0.20),
         0 1px 10px 0px rgba(0, 0, 0, 0.10),
         0 2px 4px -1px rgba(0, 0, 0, 0.40);
 }
-div.content div.page-content div.img1 img{
-    width: 80%;
+div.content div.page-content div.img .left-col,
+div.content div.page-content div.img .right-col{
+    width: 46%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-div.content div.page-content div.img2 img{
-    margin: 20px;
-    width: 40%;
+div.content div.page-content div.img .right-col{
+    margin-left: 2%;
+    margin-right: 2%;
+    float: right;
+}
+div.content div.page-content div.img .left-col{
+    margin-right: 2%;
+    margin-left: 2%;
+    float: left;
+}
+div.content div.page-content div.img div.imgcard p,
+div.content div.page-content div.img div.imgcard h2,
+div.content div.page-content div.img div.imgcard h3,
+div.content div.page-content div.img div.imgcard h4{
+    margin: 2%;
+}
+div.content div.page-content div.img div.imgcard p.comments{
+    color: #999;
+}
+div.content div.page-content div.img img{
+    width: 100%;
+}
+
+div.content div.page-content h1, 
+div.content div.page-content h2,
+div.content div.page-content h3,
+div.content div.page-content h4,
+div.content div.page-content h5{
+    font-family: 'Monda', sans-serif;
+}
+div.content div.page-content h2{
+    font-size: 40px;
+    margin: 60px 0 30px;
+}
+div.content div.page-content h3{
+    font-size: 30px;
+    margin: 40px 0 20px;
+}
+div.content div.page-content h4{
+    font-size: 25px;
+    margin: 30px 0 15px;
 }
 
 div.pagefooter{
@@ -73,7 +113,8 @@ div.pagefooter{
     background:#555;
     margin-bottom: -20px;
 }
-div.pagefooter div.footer-left-col,div.footer-right-col{
+div.pagefooter div.footer-left-col,
+div.pagefooter div.footer-right-col{
     width:50%;
     float:left;
 }

@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+        <!-- Sticky Nav -->
+        <div id="header-nav" class="header-nav">
+            <div class="top-nav">       
+                <nav>
+                    <div class="logo">
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                    </div>
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Introduction</a></li>
+                                <li><a href="">Design and Test</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Tsinghua</a></li>
+                                <li><a href="">Team BIT-China</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background and design</a></li>
+                                <li><a href="">Achievements</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                        </li>   
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background</a></li>
+                                <li><a href="">Model description</a></li>
+                                <li><a href="">Computing and Result</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                        </li>       
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                        </li>
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices</a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Members</a></li>
+                                <li><a href="">team suits</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                        </li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </nav>
+            </div>
+            <!--script-nav-->
+            <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+            </script>
+            <!--script-nav-->
+        </div>
+        <!-- top-nav -->
+        <!-- Sticky Nav -->
+
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Questionnaire
+                    </div>
+                    <div class="head-subtitle">
+                        <!-- NOTE subtitle here-->
+                        public views on allergen testing
+                    </div>
+                </div>
+                <div class="page-content">
+
+                    <h2> Introduction </h2>
+                    <p>
+                    A questionnaire survey that aims to investigate public views on allergen testing has been done at the first stage of our project, which also made a contribution to finding the stakeholder and potential users of the products we developed. The questionnaire is designed carefully, as it spreads in social networks. However, it is a pity that we can run more statistical tests to estimate the characteristics of the population as we do not have an unbalanced and random-sampling sample. Whereas we use biased sampling method, the analysis of results indeed gives us hints about how to improve our project and help us to find the proper application field.
+                    </p>
+
+                    <h2> Objective </h2>
+                    <li>To investigate the popularity of allergen testing in public</li>
+                    <li>To find out the people's views on the allergen testing the have done</li>
+                    <li>To find the stakeholders and potential users of our projects</li>
+                    <li>Improve our project and design Human Practice activities by analyzing the survey results</li>
+
+                    <h2> Methodology </h2>
+                    <h3> Convenience sampling </h3>
+                    <p>
+                    The convenience sampling is simple and easy to do. With this method, we can timely access to required information, saving the time and fund. From the point of view of convenience, investigators randomly selected a certain number of samples within the scope of the survey object for investigation. However, in practice, not all individuals in the population are the same, so the sampling results deviation is large, the credibility is low and the sample does not have enough representativeness. As we know little about the population that havs got an allergen testing, in this survey we use convenience sampling at first to test our questionnaire and gets the basic data, which let us have a preliminary understanding of the respondents.
+                    </p>
+                    <h3> Snowball sampling </h3>
+                    <p>
+                    Snowball sampling refers to interviewing randomly selected respondents and then asking them to recommend subjects that accord with the overall characteristics of the study objectives. This method can control the sample according to some sample characteristics and is suitable for finding some respondents who are very rare in the whole. This method can greatly increase the possibility of contacting the survey group, with relatively low funds and strong feasibility. In this survey, we were unable to obtain hospital diagnostic information and people who had been tested for allergens were relatively hidden. Thus, we used snowball sampling to encourage respondents to pass questionnaires to people around them who had allergies or who might have been tested for allergens. 
+                    </p>
+
+                    <h3> Online survey </h3>
+                    <p>
+                    We did an online survey that is based on Wechat - the most popular social network in China. The questionnaire is showed on screen as it showed on a paper. And the respondents need to tap the proper options or type in their answer, which is more convenient than the traditional paper way. But the drawback of this method is also obvious. This survey can only collect data from the certain population with a smartphone and a Wechat account, which is highly possible to result in an unbalance sample. We will further discuss this dilemma in the section of sample characteristics analysis.
+                    </p>
+
+                    <h2> Result </h2>
+                    <h3> Analysis of sample characteristics </h3>
+                    <p> The final sample was formed by the first sample with convenience sampling and the latter sample with snowball sampling. And we focus on the following characteristics of the sample, which help us to analyze the sampling way we design and the population.  </p>
+
+                    <div class="img">
+                        <div class="left-col">
+                            <div class="imgcard">
+                                <img src="http://2018.igem.org/wiki/images/8/87/T--Tsinghua-A--age.png" alt="">
+                                <h4> Age </h4>
+                                <p> As it shows in the pie charts, the respondents of 40-60 years old take up over 60% of the sample, while the old whose age is over 60 occupy the least. This result gives us hints that the sample way we choose is easier to get feedback among people in 22-60 years old.  </p>
+                            </div>
+                            <div class="imgcard">
+                                <img src="http://2018.igem.org/wiki/images/8/81/T--Tsinghua-A--familyincome.png" alt="">
+                                <h4> family income </h4>
+                                <p> It is showed in the figure that the households of middle class prefer to fulfill the questionnaire rather than others. This is probably because most of these families have smart phone and social network, which are both essential to fulfill the questionnaire.  </p>
+                            </div>
+                        </div>
+
+                        <div class="right-col">
+                            <div class="imgcard">
+                                <img src="http://2018.igem.org/wiki/images/8/88/T--Tsinghua-A--sex.png" alt="">
+                                <h4> Sex </h4>
+                                <p> In this circle chart, it is obvious that the female respondents occupy the majority.  </p>
+                            </div>
+                            <div class="imgcard">
+                                <img src="http://2018.igem.org/wiki/images/4/48/T--Tsinghua-A--education.png" alt="">
+                                <h4> Education </h4>
+                                <p> From the diagram, we can know that the high education respondents make up over 80% of the sample.  </p>
+                            </div>
+                            <div class="imgcard">
+                                <img src="http://2018.igem.org/wiki/images/3/3d/T--Tsinghua-A--surveybackground.png" alt="">
+                                <h4> biology or clinic background </h4>
+                                <p> From the charts, it is worth noticing that the respondents whose family has biology or clinic background occupy a proportion about 29%, which is surprisingly higher than we expected.  </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                    <p> According to the displayed statistics, the respondents of our survey are mostly the young and middle-aged who live in a middle-class family. And people who are female or have a biology or clinic background are more likely to answer our questionnaire. One reason for this result is that our survey is based on social networks and this certain population of people is more likely to have chances to use the social network and answer the questions. Besides, it can also be considered as people with these characteristics are more interested in allergy and allergen testing.  </p>
+
+                    <h3> Popularity of allergen testing </h3>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img class="left-col" src="http://2018.igem.org/wiki/images/3/3e/T--Tsinghua-A--allergyfrequency.png" alt="">
+                            <p class="right-col"> In the questionnaire, we designed a question used to investigate the allergy frequency of people. The answer '1' means respondents are never allergy while '5' means they face allergy issues all the time. From the charts, it is clear that people never allergy only make of 30% while who frequently allergy occupied over 12.2%. People who have ever get allergy take up a majority parts of sample, which indicates that the snowball sampling is worked and help us to target to the expect population.  </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <div class="left-col">
+                                <p> However, the result of another question that 'Would you seek medical advice for allergy' is a bit negative. Only half of the respondents will seek medical help even if they are allergic, which means that they probably have not attached adequate importance to allergy.  </p>
+                            </div>
+                            <div class="right-col">
+                                <img src="http://2018.igem.org/wiki/images/0/0c/T--Tsinghua-A--seekhelp.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <div class="left-col">
+                                <img src="http://2018.igem.org/wiki/images/4/44/T--Tsinghua-A--getallergytest.png" alt="">
+                            </div>
+                            <div class="right-col">
+                                <p> Meanwhile, the patients who choose to take an allergen testing occupy only a quarter. It is a hint that the allergy testing is not as popular as we think in China.  </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <h3> Views on allergen testing </h3>
+                    <p> In this part of the investigation, we mainly focus on what kinds of the allergen testing methods are popular and how respondents think about it.  </p>
+                    <p> The first result is about the popularity of various allergen testing methods. From the bar chart, it is obvious that the skin test is absolutely the mainstream, which is known by almost 90 percent of respondents. The detection of food intolerance is also popular as food intolerance often happens in China.  </p>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/0/0f/T--Tsinghua-A--popularway.png" alt="">
+                            <p class="comments">Skin test is known by most people.</p>
+                        </div>
+                    </div>
+                    <p> Besides, as the recall of respondents who have ever done an allergy testing, the allergy test they take are mostly skin test. In addition, it is noticeable that approximate 15% of respondents do not know the allergy testing method they experienced, which implies us that the popularity of allergen testing may not be done well even in hospital.  </p>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/3/3d/T--Tsinghua-A--testingwaytake.png" alt="">
+                            <p class="comments">Skin test is the most popular method.</p>
+                        </div>
+                    </div>
+                    <p> Another fact that we are interested in is the price of allergy testing, so we designed a question that ask for expect price as respondent's wish. And about 83% of respondents choose the answer that the price of it should be under 300 RMB, which is equal to approximate 45 US dollar. As we know, the expectation price in hospital is far higher than this.  </p>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/d/da/T--Tsinghua-A--expectprice.png" alt="">
+                            <p class="comments">Most people expect lower price.</p>
+                        </div>
+                    </div>
+                    <p> And we also collect views of the public on the popularity of allergen testing and the privacy of personal allergen information. As the bar charts demonstrated below, over 36% of respondents highly agree that allergen testing is worth popularizing while approximate same proportion of respondents highly disagree that the personal allergen information should be accessible to the public. This result implies us that respondents expect the popularity of allergen testing but also worry about the privacy protection of personal allergen information.  </p>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/3/3d/T--Tsinghua-A--concept.png" alt="">
+                            <p class="comments">Opinions on whether allergen testing should be popularizing are divided.</p>
+                        </div>
+                    </div>
+
+                    <h2> Summary </h2>
+                    <p> The analysis of the questionnaire survey results helps us to point out the characteristics of the sample, which also makes contributions to evaluate our sampling methods. It also gives us follow inspirations about our human practice activities and project developments.  </p>
+                    <li>As the result of survey, the allergen testing is not as popular as we expect in China. So, we tend to design a human practice activity to popularize knowledge about allergy and allergen testing. The targeted population should be those who suffer from allergy but have not taken it serious enough. Also, we want to share more knowledge about allergy to the kids because they are harder to express their feeling than adults. Thus, we choose to hold an exhibition in China Science and Technology Museum.</li>
+                    <li>From the result, we have some ideas about the stakeholders and potential users of our project. They can be population who suffer from frequently allergy and are eager to find a convenient and cheap way to do allergen testing, at the same time the personal allergen information of them can also keep privacy safely. Besides, we should try to co-operate with hospitals and medical school to get more information about allergen testing methods used in clinic now and the feedback of patients.</li>
+                    <li>We try to design a hardware that can ensure our testing can even run in family by people without professional knowledge. This kind of household allergen testing is ultimately convenient and cheap, also it protects the privacy of patient well.</li>
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+</html>
