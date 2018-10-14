@@ -63,6 +63,22 @@ div.content div.page-content div.img div.imgcard{
         0 1px 10px 0px rgba(0, 0, 0, 0.10),
         0 2px 4px -1px rgba(0, 0, 0, 0.40);
 }
+div.content div.page-content div.img a{
+    text-decoration: none;
+    font-style: normal;
+    color: #333;
+    font-size: 100%;
+}
+div.content div.page-content div.img a *{
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+}
+div.content div.page-content div.img a:hover *{
+    opacity: 0.8;
+}
 div.content div.page-content div.img .left-col,
 div.content div.page-content div.img .right-col{
     width: 46%;
