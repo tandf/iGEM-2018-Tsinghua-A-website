@@ -9,6 +9,10 @@ div.content{
 div.content div.head-pic img{
     width: 100%;
 }
+div.content div.anchor{
+    position: relative;
+    top: -100px;
+}
 div.content div.page-head{
     margin:80px 0;
     text-align:right;
