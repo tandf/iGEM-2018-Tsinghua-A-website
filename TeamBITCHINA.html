@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+
+        <!-- Sticky Nav -->
+        <div id="header-nav" class="header-nav">
+            <div class="top-nav">       
+                <nav>
+                    <div class="logo">
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                    </div>
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Introduction</a></li>
+                                <li><a href="">Design and Test</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Tsinghua</a></li>
+                                <li><a href="">Team BIT-China</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background and design</a></li>
+                                <li><a href="">Achievements</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                        </li>   
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                        </li>       
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Members</a></li>
+                                <li><a href="">team suits</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                        </li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </nav>
+            </div>
+            <!--script-nav-->
+            <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+            </script>
+            <!--script-nav-->
+        </div>
+        <!-- top-nav -->
+        <!-- Sticky Nav -->
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Collaboration
+                    </div>
+                    <div class="head-subtitle">
+                        <!-- NOTE subtitle here-->
+                        with BIT-China
+                    </div>
+                </div>
+                <div class="page-content">
+
+                    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} }); </script>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+                    <h2> Help from BIT-China </h2>
+                    <p> May 2nd, 2018, we borrowed cen.pk2-1C modified by Team BIT_China in 2017.Their work in 2017 altered a few steps of the pheromone pathway, which were </p>
+                    <li>Knocked out Ste2 receptor in order to eliminate the probability of yeasts getting affected by native ligand-pheromone.</li>
+                    <li>Knocked out Sst2, the GTPase-activating protein for Gpa1p, as a receptor-desensitizing factor in order to eliminate possible up-stream GPCR signal conductive decline due to incessant stimulation. 
+                            <small> See <a href="https://www.yeastgenome.org/locus/SST2">resource 1</a> <a href="https://www.ncbi.nlm.nih.gov/pubmed/8673468">resource 2</a></small>
+                    </li>
+
+
+                    <li> Knocked out Far1, the cyclin-dependent protein serine/threonine kinase inhibitor in order to eliminate side effect to cells’ life circle and formation due to signal intensification in MAPK pathway of the pheromone pathway.
+                    <small> <a href="https://www.yeastgenome.org/locus/S000003693">More information</a></small></li>
+                    
+
+                    <p>Their modification work provide us with great convenience in our work in 2018.</p>
+                    <p>In August, we borrowed original yeast cen.pk2-1C from Laboratory Li Chun which Team BIT_China was attached to. The yeast did not undergo modifications below.</p>
+
+                    <li> Utilizing α-yeast from the lab of Professor Li Peng as a signal source, we stimulated original yeast imported plasmid of report gene in order to test the function of report plasmid.
+                    <small><a href="https://sgd-prod-upload.s3.amazonaws.com/S000208134/CEN.PK2-1Ca_Stanford_2014_JRIV01000000.README">More information</a></small></li>
+
+
+                    <li> We compared the result of ligand combination reaction before and after knocking out the relative gene in yeast, verifying the contributions the modifications made in the elimination of side effect.</li>
+
+                    <h2> How we helped BIT-China </h2>
+                    In this year, we make a model based on our research of diagnosis model for Team BIT-China to help them construct the relation between Hydrogen peroxide input and fluorescence intensity.
+
+                    <h3> Model Background </h3>
+
+                    <p> According to the share of team member in BIT-China, we notice that when the amount of probes are far more than the Hydrogen peroxide. The fluorescence intensity is probably proportion to the concentration of Hydrogen peroxide. Thus, we decided to construct a linear regression model based on the data that Team BIT-China provided to validate the potential linear relationship between fluorescence intensity and Hydrogen peroxide. Also, this model can be use as a standard for Hydrogen peroxide testing.  </p>
+
+                    <h3> Linear regression analysis </h3>
+                    <h4> Definition </h4>
+
+                    <p><strong>$H_2O_2$</strong>: The concentration of $H_2O_2$, units in $mM$.</p>
+                    <p><strong>FOD</strong>: Florescence intensity / OD </p>
+
+                    <h4> Scatter Plot </h4>
+
+                    <p> The Scatter Plot of data are demonstrated below.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/5/5a/T--Tsinghua-A--ScatterPlot.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> From the chart, it is clear that the FOD is in proportion to the $H_2O_2$, when the $H_2O_2$ is between 0-2.5 $mM.$ The data in the points that $H_2O_2$ is 5 are obviously not obey linear model. Thus, we consider to construct a linear model between 0 and 2.5$mM$ of  $H_2O_2$. The new Scatter Plot of this part of data are showed below.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/4/4b/T--Tsinghua-A--ScatterPlot2.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> The scatter plot witnessed a significant linearity of between FOD and $H_2O_2$, so we tend to use a linear model to predict and explain the results.  </p>
+
+                    <h3> Model Construction </h3>
+                    <p> With the criteria of the least square, we construct following linear model </p>
+                    <p> $$FOD_i=β_0+β_1  H_2O_{2i}+ϵ_i  ,ϵ_i~N(0,σ^2)$$ </p>
+                    <p> The property of the model are demonstrated below </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/4/4b/T--Tsinghua-A--data.png" alt="">
+                        </div>
+                    </div>
+
+                    <p>It is obvious that the data fits linear model well and the parameters are following</p>
+                    <p>$$FOD_i=4752+1214.48 H_2O_{2i}+ϵ_i,ϵ_i~N(0,425.9)$$</p>
+                    <p>The data along with the fitted values of the model and the confidence interval are pictured below.</p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/b/b5/T--Tsinghua-A--LinearRegression.png" alt="">
+                        </div>
+                    </div>
+
+                    <h3> Residuals Analysis </h3>
+                    <p> We also run a residuals analysis to ensure this linear model is proper to fit the data. First, we draw histogram and QQ-plot of standard residuals.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/1/11/T--Tsinghua-A--SResidualDistribution.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/b/b6/T--Tsinghua-A--QQplot.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> From the histogram, the standard residuals equally drop in the two sides of zero, which means that the residuals are possibly independent. Also, the QQ-plot implies the significant normality of residuals.  </p>
+
+                    <h3> Results and inspirations </h3>
+                    <p> The linear model we constructed validates the linearity between the concentration of $H_2O_2$ and the fluorescence intensity divided by the OD value, which the $H_2O_2$ is in the interval from 0 to 2.5$mM$. And we also analyze the residuals of the model to ensure it works well. With this model, we can properly predict the output when the concentration of $H_2O_2$ is in certain interval.  </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+</html>
