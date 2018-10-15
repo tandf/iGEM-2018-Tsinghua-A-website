@@ -25,6 +25,7 @@ jQuery(document).ready(function($) {
         <!-- fonts -->
     </head>
     <body>
+
         <!-- Sticky Nav -->
         <div id="header-nav" class="header-nav">
             <div class="top-nav">       
@@ -66,8 +67,19 @@ jQuery(document).ready(function($) {
                         <li>
                             <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
                         </li>
-                        <li>
-                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices</a>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
                         </li>
                         <li class="dropdown">
                             <ul class="dropdown-menu">
@@ -92,26 +104,214 @@ $("span.menu").click(function(){
         <!-- top-nav -->
         <!-- Sticky Nav -->
 
-
         <!-- page-content -->
         <div class="content">
             <div class="container">
-                
+
+                <div class="anchor" id="Questionnaire"></div>
                 <div class="page-head">
                     <div class="head-title">
                         <!-- NOTE title here-->
-                        Title
+                        Modeling
                     </div>
                     <div class="head-subtitle">
                         <!-- NOTE subtitle here-->
-                        Title
                     </div>
                 </div>
                 <div class="page-content">
-                    <!-- NOTE content here-->
-                    <p>The fifth Conference of China iGEMer Community (CCiC) we attended in August was accredited by the iGEM authority. In the conference, we presented our team’s poster and demonstrated the project. With abundant preparations and excelsior attitudes, we achieved great success and high reputation.</p>
-                    <p>Every night during the conference, our poster attracted a number of students from other universities to discuss with us. After a short period of dissemination, our project’s designs and effects were learned by almost all participants. While giving publicity to ourselves, we paid attention to other teams’ lecture and presentation, taking notes and discussing together late in the hotel.</p>
-                    <p>On the last day, our representation was splendid due to lucid logical structure and full plans to answer the questions raised by famous iGEMer, the special guest of the conference Zhang Haoqian, and get recognition from all guests present.</p>
+
+                    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} }); </script>
+                    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+                    <h2> Introduction </h2>
+                    <p> This is the modeling for project ATM allergen testing system of Team Tsinghua-A in iGEM2018.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\process.png" alt="">
+                            <p>System Processing</p>
+                        </div>
+                    </div>
+
+                    <h2> Reaction in system </h2>
+                    <p> This part of model focuses on the reaction of histamine and receptors in the testing system, and figures out the relation between the amount of histamine and ligand-receptor combinations.  </p>
+
+                    <table>
+                        <tr><th>Name   </th> <th>Description                                   </th> <th>Unit</th> </tr>
+                        <tr><td>$R$    </td> <td>The inactivated histamine receptor            </td> <td>1   </td> </tr>
+                        <tr><td>$RL$   </td> <td>The activated histamine receptor in the system</td> <td>1   </td> </tr>
+                        <tr><td>$RL_p$ </td> <td>The activated histamine receptor in per yeast </td> <td>1   </td> </tr>
+                        <tr><td>$L_t$  </td> <td>- The ligand histamine                        </td> <td>1   </td> </tr>
+                    </table>
+
+                    <table>
+                        <tr><th>Name </th> <th>Description                       </th> <th>value                </th> <th>Unit</th> </tr>
+                        <tr><td>$K$  </td> <td>The affinity of receptor          </td> <td>10                   </td> <td>nM  </td> </tr>
+                        <tr><td>$V$  </td> <td>The volume of the reaction system </td> <td>$10^{-3}$            </td> <td>L   </td> </tr>
+                        <tr><td>$N$  </td> <td>The number of yeasts in the system</td> <td>$10^7$               </td> <td>1   </td> </tr>
+                        <tr><td>$R_p$</td> <td>The receptor number in one yeast  </td> <td>$10^4$               </td> <td>1   </td> </tr>
+                        <tr><td>$N_A$</td> <td>Avogadro's number                 </td> <td>$6.02\times 10^{23} $</td> <td>1   </td> </tr>
+                    </table>
+
+                    <h3> Model Description </h3>
+                    <p> The main reaction is described by the following function </p>
+                    <p> $$ K=\frac{[R][L]}{[RL]}=\frac{(NR_p-[RL])(L_t-[RL])}{[RL]}=\frac{\frac{(NR_p-RL)(L_t-RL)}{{(VN_A)}^2}}{{\frac{RL}{VN_A}}} $$ </p>
+                    <p> Replacing $RL$ as $x$, we can have follow function </p>
+                    <p>$$ x^2-(NR_p +L_t +KVN_A)x+NR_pL_t=0 $$</p>
+                    <p>The solve of this quadratic function are</p>
+                    <p>$$ x_{1,2}=\frac{NR_p+L_t+KVN_A\pm \sqrt{{(NR_p+L_t+KVN_A)}^2-4L_tNR_p}}{2} $$</p>
+                    <p>According to the limitation $RL \lt R$,we remain this solve to calculate the concentration of ligand-receptor compound in the testing system.</p>
+                    <p>$$ RL_t=x_1=\frac{NR_p+L_t+KVN_A- \sqrt{{(NR_p+L_t+KVN_A)}^2-4L_tNR_p}}{2} $$</p>
+                    <p>Now we simply use the expectation of the activated histamine receptor in each cell,which is defined as $ERL=\frac{RL_t}{N}$ to approximate the reality.This figure below demonstrates the  relation between concentrations of histamine and the activated histamine receptor.</p>
+                    <p>$$RL_t=f(L_t)$$</p>
+
+                    \includegraphics[scale=0.6]{RL.png}
+
+                    <h2> Signal pathway in a yeast </h2>
+                    <p> This part o model displays the modified pheromone pathway in the yeast.The input signal is the concentration of activated receptor in a yeast.The system is contructed by GPCR,MAPK and the expression of EGFP gene.And the output is the concentration of EGFP.In this part,we use Simbiology in MATLAB to construct and simulate our model.\citep{Szallasi2006System} </p>
+
+                    <h3> Compartment Diagram </h3>
+                    \includegraphics[scale=0.8]{CDiag.png}
+
+                    <h3> Model details </h3>
+                    <p> The species, parameters and functions of the model can be found in appendix 1. \citep{Kofahl2004Modelling} </p> 
+                    <!--NOTE cite-->
+
+                    <h3> Model Analysis </h3>
+                    <p> First, we took a glance at the input time series (activated histamine receptor) and the transcription fact (ste12active) which is the output of MAPK cascade.  </p>
+
+                    \includegraphics[scale=0.6]{pulsebroadening.png}
+
+                    <p> In this figure, the degradation of activated histamine receptor (RL) and the output of signal transmission (ste12active) is demonstrated.\citep{Bardwell1996Signaling} We are surprising that the system -- GPCR and MAPK in series connection has a function of pulse broadening. This function is because the amplification of MAPK cascade, which ensure the output transcription factor is stable while the input is really low. Thus, this part of the cascade ensures the stability of the output even if the input is a narrow pulse by pulse broadening.  </p>
+                    <p> And we run some parameter scan to analysis how the model works under various parameter sets. And we focus on the affinity of histamine receptor and the degradation rate of the activated histamine, which are both reckoned as highly sensitive parameters before.  </p>
+                    <p> The the affinity of histamine receptor and degradation rate of activate receptor scan results are showed below.  </p>
+
+                    \includegraphics[scale=0.4]{bingding_rate.png}
+                    \includegraphics[scale=0.4]{RL_degration_rate.png}
+
+                    <p> From the figures, we figure that the peak of the concentration of EGFP increases and the decline of it is delayed as the affinity goes higher or the degradation rate of receptor gets lower, which implied us that we can artificially tune these two parameters to adjust the output. Besides,it reminds us that the randomness of these should be further considered in the stochastic model.  </p>
+
+                    <p> Then, we did an input scan and get a figure of output time series of various input, which is demonstrated below. As to the system, the input is the activated histamine receptor in a cell and the output is the concentration of EGFP.  </p>
+
+                    \includegraphics[scale=0.4]{3dTimeSeries.png}
+                    \includegraphics[scale=0.4]{3dTimeSeries2.png}
+
+                    <p> From this figure, it is obvious that the concentration of EGFP soars at the first time and reach a peak,then gradually decreases, since the activated histamine receptor degrade as the time goes by. In addition, the concentration of EGFP monotonously changes as that of RL (input) goes up , which is an evidence that it is possible to test the concentration of activated receptor by that of EGFP.  </p>
+
+                    <h2> Diagnosis Model </h2>
+                    <p> Diagnosis Model is a model constructed to design,analyze and optimize the diagnostic criteria of histamine testing we developed.In this testing, our purpose is to test whether the histamine concentration in a sample reach a certain level.If it does, we consider this kind of result as positive result, which means allergy is possibly happened.However,if the histamine concentration maintains in a background level, we consider it as a negative result.So the diagnosis model is indeed a classification model which focuses on the strategy to determine how we announce the testing result and how much we can believe in it. And, to be emphasized, this model is on the basis of the models we constructed before -- 'Reaction in system' and 'Signal pathway in a yeast'\citep{Isermann2005Model} </p>
+                    <!--NOTE cite-->
+
+                    <h3> Diagnostic criteria design </h3>
+                    <p> Now we begin with the EGFP concentration in a yeast when certain amount of the histamine receptor activated, which is the output in the signal pathway model. From the figure 14, it is clear that the output is dynamic. However, using the whole time series as an output result is complicated in calculation and analysis. Thus, we decide to choose the output at a certain time as the output.Now the dilemma is how to choose the proper time that makes the testing is most accurate and effective.  </p>
+                    <p> The core concept is the greedy method here. As the result we observed in the figure 14, the EGFP outputs at certain time are different from the input, which means we can define a gap at certain time as follow </p>
+                    <p> $$ gap(t)=max\{EGFP(t,RL_{max})\}-min\{EGFP(t,RL_{min})\} $$ </p>
+                    <p> The $RL_{max}$ and $RL_{min}$ in the definition mean the $RL$ values that let the EGFP in time $t$ has the maximum or minimum value respectively.Generally, $RL_{max}=RL_p$ and $RL_{min}=0$.The gap can be calculated and shown in the follow chart.  </p>
+
+                    \includegraphics[scale=0.6]{gap.png}
+
+                    <p> Then,the time that has biggest gap $t_{max}$ can be easily found by algorithms, for example, the simulated annealing we used.In this set of parameter, we find that $t_{max}=145$.  </p>
+                    <p> Next, we focus on the relation between the concentration of activated histamine receptor (input) and that of EGFP (output) in the time $t_{max}$ (145), which is demonstrated in the follow line charts.  </p>
+
+                    \includegraphics[scale=0.6]{plot_in_tmax.png}
+
+                    <p> As the chart shows, the concentration of EGFP soars when that of activated histamine receptor is less than approximate 250nM, but the growth rate decreases and maintains stable after this.And, by interpolation, we figure out the function of relation between the concentration of activated histamine receptor and that of EGFP in one yeast.  </p>
+                    <p> Then, we assume that the fluorescence intensity ($Flo_p$) and the concentration of EGFP in one yeast (EGFP) follow this simple linear relation.  </p>
+                    <p>$$ Flo_p=kEGFP=kf(RL_p) $$</p>
+                    <p>Recalling the number of yeasts in the testing system $N$, we can derive the relation between the fluorescence intensity ($Flo_t$) and the expectation of concentration of EGFP in one yeast.</p>
+                    <p>$$ Flo_t=k\times N \times EGFP=k N  f(RL_p) $$</p>
+                    <p>The $k$ is scale coefficient and $N$ is the number of yeast in the system.To further improve, we combine the model 'Reaction in system' that provides the relation of histamine in the system and the expectation activated histamine in one cell. Thus, we have a full model from the histamine in the cell to the fluorescence intensity.And we consider it as a known function </p>
+                    <p>$$ Flo_t=Testing(L_t) $$</p>
+                    <p>Taking $k=1000,N={10}^7$, the plot of this function is showed below.</p>
+
+                    \includegraphics[scale=0.6]{systemplot.png}
+
+                    <p>In this testing, we can flexibly control the input concentration of histamine by diluting or concentrating. However, we know from other researchers and clinical doctors that the expectation histamine concentration of positive result ($EH_p$) is often ten times of that of negative one ($EH_n$). </p>
+                    <p>$$ log(EH_p)=log(EH_n)+1 $$</p>
+                    <p>Thus, with the above rule, we have to find a proper negative input, which ensures the testing system has the best discrimination. In other words, we need to decide the expectation of histamine input of negative result, which makes the negative result and positive result is the furthest. We can define the difference between the negative and positive result as follow as we know that $EH_p=10EH_n$</p>
+                    <p>$$ dif=Testing(EH_p)-Testing(EH_n)=Testing(10EH_n)-Testing(EH_n) $$</p>
+                    <p>The $dif$ is a function of $EH_n$, so we can find a $EH_n$ that maximize the $dif$.The figure of $dif $ is shown below.</p>
+
+                    \includegraphics[scale=0.6]{dif.png}
+
+                    <p> In this parameter set we choose, the proper expectation histamine input of negative result that makes the difference biggest is $EN_n=3.16nM$, and the corresponding input of positive result is $EN_p = 10EN_n =31.65nM$. We can directly point these in the plot of the system function as below.  </p>
+
+                    \includegraphics[scale=0.4]{ouput.png}
+
+                    <p> In summary, after analyzing the testing system, we figure out that letting the negative histamine input be $EN_n=3.16nM$(With this parameter set) and testing fluorescence in time $t_{max}=145$(With this parameter set) should be the most efficient and accurate criteria.  </p>
+
+                    <h3> Threshold Calculation </h3>
+                    <p>After we designed the deterministic model of diagnosis, the error of the input and system should be considered. It is reasonable that there are errors in both negative and positive input, as the histamine in example is different and the manual operation also brings errors. Thus, we tend to assume that the negative and positive inputs ($H_n$ and $H_p$) are subject to normal distributions as below</p>
+                    <p>$$ H_n \sim N(EH_n,\sigma_n^2) $$</p>
+                    <p>$$ H_p \sim N(EH_p,\sigma_p^2) $$</p>
+                    <p>Besides, the error of affinity of receptor and receptor amount in per yeast, as system errors, are also considered. From papers, we know that affinity $K$ is probably between $5nM$ to $15nM$, and the receptors in per yeast $R_p$ is probably $10^4$,thus</p>
+                    <p>$$ K \sim N(10,2.5) $$</p>
+                    <p>$$ R_p \sim N(10^4,\sigma_R^2) $$</p>
+                    <p>And we also consider an uniformity error of the system output ($Flo_t$), which is caused by the error of fluorescence detection hardware.</p>
+                    <p>$$ Flo_t \sim N(E(Flo_t),\sigma_f^2) $$</p>
+
+                    <p>After defining deviations of the system, we simply take follow parameters to testing.</p>
+                    <p>$$ \sigma_n^2=5\%EH_n \; \sigma_p^2=5\%EH_p \; \sigma_R^2=500 \; \sigma_f^2=1\%E(Flo_t) $$</p>
+                    <p>Then, we can use Monte Carlo methods to simulate the negative and positive result. We choose 100000 iterations Gibs Sampling to simulate this system. And the outcome is demonstrated below.</p>
+
+                    \includegraphics[scale=0.4]{distrib.png}
+
+                    <p> And we can use the ROC to decide the proper threshold that makes the testing most accurate and efficient. The ROC plot is showed below </p>
+
+                    \includegraphics[scale=0.4]{ROC.png}
+
+                    <p> From the ROC, it is clear that the threshold of the testing should be 8.822 and the AUC that measure the quality of testing is 0.929, which is adequately high.  </p>
+
+                    <h3> Risk Analysis </h3>
+                    <p> At the final part of the modeling, we are interested in how the errors of input and system influence the testing accuracy. First, we continue to use the definition of error in the previous part,and more specific class the errors into two parts.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <p><strong> Relative system errors </strong></p>
+                            <p>The relative error of the testing system, mainly because of the uncertainty of sensitive parameters and fluorescence detection error of the hardware.</p>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <p><strong> Relative input errors </strong></p>
+                            <p>The relative error of input concentration of histamine, basically because of the operation errors and the natural variance of samples.</p>
+                        </div>
+                    </div>
+
+                    <p> And we also use Monte Carlo method to simulate it and get a heat plot, which give us hints about how errors in system and input influence the testing quality. In this analysis, we use AUC to indicates the testing quality.  </p>
+
+                    \includegraphics[scale=0.5]{errorcomparer.png}
+
+                    <p> From the heat chart, it is clear that the relative error in system has much less effect on the accuracy of testing than that of input, which imply us that it is vital to control the deviation of input. Thus, we have to find a stable and precise way to deal with our histamine samples.The better the input error is controlled, the more accurate the testing is.  </p>
+
+                    <h2> Acknowledgement </h2>
+                    <p> At the point of finishing this paper, I’d like to express my sincere thanks to all those teammates Li Yaqi Zuo Duyun etc. and advisors Mr. Wang Xiaobo Mr. Xie Zhen and Ms. Wang Jingjing who have lent me hands in the course of my writing this paper. Besides I would like to thank friends below who are not in our team but still give generous support to me.  </p>
+
+                    <div class="attributionItem">
+                        <div>
+                            <span class="name"> Qin Zihan </span>
+                            <span class="org"> Renmin University of China </span>
+                        </div>
+                        <p class="contribution"> For statistic and questionnaire survey advise </p>
+                    </div>
+
+                    <div class="attributionItem">
+                        <div>
+                            <span class="name"> Xu Haoyang </span>
+                            <span class="org"> Tsinghua University </span>
+                        </div>
+                        <p class="contribution"> For algorithm and latex guidance </p>
+                    </div>
+
+                    <div class="attributionItem">
+                        <div>
+                            <span class="name"> Liu Qiaochu </span>
+                            <span class="org"> Tsinghua University </span>
+                        </div>
+                        <p class="contribution"> For chemistry counseling </p>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -6,6 +6,17 @@ body{
 div.content{
     font-size:20px;
 }
+div.content table{
+    margin: 30px auto;
+}
+div.content table *{
+    line-height: 200%;
+    font-size: 22px;
+}
+div.content table th,
+div.content table td{
+    padding: 0 15px;
+}
 div.content div.head-pic img{
     width: 100%;
 }
