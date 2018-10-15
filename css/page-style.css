@@ -11,7 +11,7 @@ div.content table{
 }
 div.content table *{
     line-height: 200%;
-    font-size: 22px;
+    font-size: 21px;
 }
 div.content table th,
 div.content table td{
@@ -183,6 +183,7 @@ div.attributionItem{
 div.attributionItem div span.name{
     font-style: italic;
     font-weight: 700;
+    color: black;
 }
 div.attributionItem span.org{
     font-weight: 700;

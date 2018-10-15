@@ -126,10 +126,10 @@ $("span.menu").click(function(){
                     <h2> Introduction </h2>
                     <p> This is the modeling for project ATM allergen testing system of Team Tsinghua-A in iGEM2018.  </p>
 
+                    <h3> System Processing </h3>
                     <div class="img">
                         <div class="imgcard">
                             <img src="c:\Users\tandf\Downloads\temp\Modeling\process.png" alt="">
-                            <p>System Processing</p>
                         </div>
                     </div>
 
@@ -165,13 +165,21 @@ $("span.menu").click(function(){
                     <p>Now we simply use the expectation of the activated histamine receptor in each cell,which is defined as $ERL=\frac{RL_t}{N}$ to approximate the reality.This figure below demonstrates the  relation between concentrations of histamine and the activated histamine receptor.</p>
                     <p>$$RL_t=f(L_t)$$</p>
 
-                    \includegraphics[scale=0.6]{RL.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\RL.png" alt="">
+                        </div>
+                    </div>
 
                     <h2> Signal pathway in a yeast </h2>
                     <p> This part o model displays the modified pheromone pathway in the yeast.The input signal is the concentration of activated receptor in a yeast.The system is contructed by GPCR,MAPK and the expression of EGFP gene.And the output is the concentration of EGFP.In this part,we use Simbiology in MATLAB to construct and simulate our model.\citep{Szallasi2006System} </p>
 
                     <h3> Compartment Diagram </h3>
-                    \includegraphics[scale=0.8]{CDiag.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\CompartmentDiag.png" alt="">
+                        </div>
+                    </div>
 
                     <h3> Model details </h3>
                     <p> The species, parameters and functions of the model can be found in appendix 1. \citep{Kofahl2004Modelling} </p> 
@@ -180,21 +188,47 @@ $("span.menu").click(function(){
                     <h3> Model Analysis </h3>
                     <p> First, we took a glance at the input time series (activated histamine receptor) and the transcription fact (ste12active) which is the output of MAPK cascade.  </p>
 
-                    \includegraphics[scale=0.6]{pulsebroadening.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\pulsebroadening.png" alt="">
+                        </div>
+                    </div>
 
                     <p> In this figure, the degradation of activated histamine receptor (RL) and the output of signal transmission (ste12active) is demonstrated.\citep{Bardwell1996Signaling} We are surprising that the system -- GPCR and MAPK in series connection has a function of pulse broadening. This function is because the amplification of MAPK cascade, which ensure the output transcription factor is stable while the input is really low. Thus, this part of the cascade ensures the stability of the output even if the input is a narrow pulse by pulse broadening.  </p>
                     <p> And we run some parameter scan to analysis how the model works under various parameter sets. And we focus on the affinity of histamine receptor and the degradation rate of the activated histamine, which are both reckoned as highly sensitive parameters before.  </p>
                     <p> The the affinity of histamine receptor and degradation rate of activate receptor scan results are showed below.  </p>
 
-                    \includegraphics[scale=0.4]{bingding_rate.png}
-                    \includegraphics[scale=0.4]{RL_degration_rate.png}
+                    <div class="img">
+                        <div class="left-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\bingding_rate.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\RL.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
 
                     <p> From the figures, we figure that the peak of the concentration of EGFP increases and the decline of it is delayed as the affinity goes higher or the degradation rate of receptor gets lower, which implied us that we can artificially tune these two parameters to adjust the output. Besides,it reminds us that the randomness of these should be further considered in the stochastic model.  </p>
 
                     <p> Then, we did an input scan and get a figure of output time series of various input, which is demonstrated below. As to the system, the input is the activated histamine receptor in a cell and the output is the concentration of EGFP.  </p>
 
-                    \includegraphics[scale=0.4]{3dTimeSeries.png}
-                    \includegraphics[scale=0.4]{3dTimeSeries2.png}
+                    <div class="img">
+                        <div class="left-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\3dTimeSeries.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\3dTimeSeries2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
 
                     <p> From this figure, it is obvious that the concentration of EGFP soars at the first time and reach a peak,then gradually decreases, since the activated histamine receptor degrade as the time goes by. In addition, the concentration of EGFP monotonously changes as that of RL (input) goes up , which is an evidence that it is possible to test the concentration of activated receptor by that of EGFP.  </p>
 
@@ -208,12 +242,20 @@ $("span.menu").click(function(){
                     <p> $$ gap(t)=max\{EGFP(t,RL_{max})\}-min\{EGFP(t,RL_{min})\} $$ </p>
                     <p> The $RL_{max}$ and $RL_{min}$ in the definition mean the $RL$ values that let the EGFP in time $t$ has the maximum or minimum value respectively.Generally, $RL_{max}=RL_p$ and $RL_{min}=0$.The gap can be calculated and shown in the follow chart.  </p>
 
-                    \includegraphics[scale=0.6]{gap.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\gap.png" alt="">
+                        </div>
+                    </div>
 
                     <p> Then,the time that has biggest gap $t_{max}$ can be easily found by algorithms, for example, the simulated annealing we used.In this set of parameter, we find that $t_{max}=145$.  </p>
                     <p> Next, we focus on the relation between the concentration of activated histamine receptor (input) and that of EGFP (output) in the time $t_{max}$ (145), which is demonstrated in the follow line charts.  </p>
 
-                    \includegraphics[scale=0.6]{plot_in_tmax.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\plot_in_tmax.png" alt="">
+                        </div>
+                    </div>
 
                     <p> As the chart shows, the concentration of EGFP soars when that of activated histamine receptor is less than approximate 250nM, but the growth rate decreases and maintains stable after this.And, by interpolation, we figure out the function of relation between the concentration of activated histamine receptor and that of EGFP in one yeast.  </p>
                     <p> Then, we assume that the fluorescence intensity ($Flo_p$) and the concentration of EGFP in one yeast (EGFP) follow this simple linear relation.  </p>
@@ -224,7 +266,11 @@ $("span.menu").click(function(){
                     <p>$$ Flo_t=Testing(L_t) $$</p>
                     <p>Taking $k=1000,N={10}^7$, the plot of this function is showed below.</p>
 
-                    \includegraphics[scale=0.6]{systemplot.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\systemplot.png" alt="">
+                        </div>
+                    </div>
 
                     <p>In this testing, we can flexibly control the input concentration of histamine by diluting or concentrating. However, we know from other researchers and clinical doctors that the expectation histamine concentration of positive result ($EH_p$) is often ten times of that of negative one ($EH_n$). </p>
                     <p>$$ log(EH_p)=log(EH_n)+1 $$</p>
@@ -232,11 +278,20 @@ $("span.menu").click(function(){
                     <p>$$ dif=Testing(EH_p)-Testing(EH_n)=Testing(10EH_n)-Testing(EH_n) $$</p>
                     <p>The $dif$ is a function of $EH_n$, so we can find a $EH_n$ that maximize the $dif$.The figure of $dif $ is shown below.</p>
 
-                    \includegraphics[scale=0.6]{dif.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\dif.png" alt="">
+                        </div>
+                    </div>
 
                     <p> In this parameter set we choose, the proper expectation histamine input of negative result that makes the difference biggest is $EN_n=3.16nM$, and the corresponding input of positive result is $EN_p = 10EN_n =31.65nM$. We can directly point these in the plot of the system function as below.  </p>
 
-                    \includegraphics[scale=0.4]{ouput.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\ouput.png" alt="">
+                        </div>
+                    </div>
+
 
                     <p> In summary, after analyzing the testing system, we figure out that letting the negative histamine input be $EN_n=3.16nM$(With this parameter set) and testing fluorescence in time $t_{max}=145$(With this parameter set) should be the most efficient and accurate criteria.  </p>
 
@@ -254,11 +309,26 @@ $("span.menu").click(function(){
                     <p>$$ \sigma_n^2=5\%EH_n \; \sigma_p^2=5\%EH_p \; \sigma_R^2=500 \; \sigma_f^2=1\%E(Flo_t) $$</p>
                     <p>Then, we can use Monte Carlo methods to simulate the negative and positive result. We choose 100000 iterations Gibs Sampling to simulate this system. And the outcome is demonstrated below.</p>
 
-                    \includegraphics[scale=0.4]{distrib.png}
+                    <div class="img">
+                        <div class="left-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\distrib.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="imgcard">
+                                <img src="c:\Users\tandf\Downloads\temp\Modeling\ouput.png" alt="">
+                            </div>
+                        </div>
+                    </div>
 
                     <p> And we can use the ROC to decide the proper threshold that makes the testing most accurate and efficient. The ROC plot is showed below </p>
 
-                    \includegraphics[scale=0.4]{ROC.png}
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\ROC.png" alt="">
+                        </div>
+                    </div>
 
                     <p> From the ROC, it is clear that the threshold of the testing should be 8.822 and the AUC that measure the quality of testing is 0.929, which is adequately high.  </p>
 
@@ -280,6 +350,12 @@ $("span.menu").click(function(){
                     </div>
 
                     <p> And we also use Monte Carlo method to simulate it and get a heat plot, which give us hints about how errors in system and input influence the testing quality. In this analysis, we use AUC to indicates the testing quality.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="c:\Users\tandf\Downloads\temp\Modeling\errorcomparer.png" alt="">
+                        </div>
+                    </div>
 
                     \includegraphics[scale=0.5]{errorcomparer.png}
 
