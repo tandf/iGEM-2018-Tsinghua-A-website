@@ -58,9 +58,11 @@ jQuery(document).ready(function($) {
                         </li>   
                         <li class="dropdown">
                             <ul class="dropdown-menu">
-                                <li><a href="">Background</a></li>
-                                <li><a href="">Model description</a></li>
-                                <li><a href="">Computing and Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
                             </ul>
                             <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
                         </li>       
@@ -121,8 +123,9 @@ $("span.menu").click(function(){
                 <div class="page-content">
 
                     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} }); </script>
-                    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
+                    <div class="anchor" id="Introduction"></div>
                     <h2> Introduction </h2>
                     <p> This is the modeling for project ATM allergen testing system of Team Tsinghua-A in iGEM2018.  </p>
 
@@ -133,6 +136,7 @@ $("span.menu").click(function(){
                         </div>
                     </div>
 
+                    <div class="anchor" id="ReactionInSystem"></div>
                     <h2> Reaction in system </h2>
                     <p> This part of model focuses on the reaction of histamine and receptors in the testing system, and figures out the relation between the amount of histamine and ligand-receptor combinations.  </p>
 
@@ -171,6 +175,7 @@ $("span.menu").click(function(){
                         </div>
                     </div>
 
+                    <div class="anchor" id="SignalPathwayInAYeast"></div>
                     <h2> Signal pathway in a yeast </h2>
                     <p> This part o model displays the modified pheromone pathway in the yeast. The input signal is the concentration of activated receptor in a yeast. The system is constructed by GPCR, MAPK and the expression of the EGFP gene. And the output is the concentration of EGFP.In this part, we use Simbiology in MATLAB to construct and simulate our model.</p>
 
@@ -231,6 +236,7 @@ $("span.menu").click(function(){
 
                     <p> From this figure, it is obvious that the concentration of EGFP soars at the first time and reach a peak,then gradually decreases, since the activated histamine receptor degrade as the time goes by. In addition, the concentration of EGFP monotonously changes as that of RL (input) goes up , which is an evidence that it is possible to test the concentration of activated receptor by that of EGFP.  </p>
 
+                    <div class="anchor" id="DiagnosisModel"></div>
                     <h2> Diagnosis Model </h2>
                     <p> Diagnosis Model is a model constructed to design, analyze and optimize the diagnostic criteria of histamine testing we developed. In this testing, our purpose is to test whether the histamine concentration in a sample reaches a certain level. If it does, we consider this kind of result as a positive result, which means allergy has possibly happened. However, if the histamine concentration maintains at a background level, we consider it as a negative result. So the diagnosis model is indeed a classification model which focuses on the strategy to determine how we announce the testing result and how much we can believe in it. And, to be emphasized, this model is on the basis of the models we constructed before -- 'Reaction in system' and 'Signal pathway in a yeast. </p>
 
@@ -350,6 +356,7 @@ $("span.menu").click(function(){
 
                     <p> From the heat chart, it is clear that the raative error in a system has much less effect on the accuracy of testing than that of input, which implies us that it is vital to control the deviation of input. Thus, we have to find a stable and precise way to deal with our histamine samples. The better the input error is controlled, the more accurate the testing is.  </p>
 
+                    <div class="anchor" id="Acknowledgement"></div>
                     <h2> Acknowledgement </h2>
                     <p> At the point of finishing this paper, I’d like to express my sincere thanks to all those teammates Li Yaqi Zuo Duyun etc. and advisors Mr. Wang Xiaobo Mr. Xie Zhen and Ms. Wang Jingjing who have lent me hands in the course of my writing this paper. Besides, I would like to thank friends below who are not in our team but still give generous support to me.  </p>
 
