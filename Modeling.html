@@ -129,7 +129,7 @@ $("span.menu").click(function(){
                     <h3> System Processing </h3>
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\process.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/b/be/T--Tsinghua-A--process.png" alt="">
                         </div>
                     </div>
 
@@ -167,46 +167,45 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\RL.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/a/ab/T--Tsinghua-A--RL.png" alt="">
                         </div>
                     </div>
 
                     <h2> Signal pathway in a yeast </h2>
-                    <p> This part o model displays the modified pheromone pathway in the yeast.The input signal is the concentration of activated receptor in a yeast.The system is contructed by GPCR,MAPK and the expression of EGFP gene.And the output is the concentration of EGFP.In this part,we use Simbiology in MATLAB to construct and simulate our model.\citep{Szallasi2006System} </p>
+                    <p> This part o model displays the modified pheromone pathway in the yeast. The input signal is the concentration of activated receptor in a yeast. The system is constructed by GPCR, MAPK and the expression of the EGFP gene. And the output is the concentration of EGFP.In this part, we use Simbiology in MATLAB to construct and simulate our model.</p>
 
                     <h3> Compartment Diagram </h3>
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\CompartmentDiag.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/8/87/T--Tsinghua-A--CompartmentDiag.png" alt="">
                         </div>
                     </div>
 
                     <h3> Model details </h3>
-                    <p> The species, parameters and functions of the model can be found in appendix 1. \citep{Kofahl2004Modelling} </p> 
-                    <!--NOTE cite-->
+                    <p> The species, parameters and functions of the model can be found in appendix 1.</p> 
 
                     <h3> Model Analysis </h3>
                     <p> First, we took a glance at the input time series (activated histamine receptor) and the transcription fact (ste12active) which is the output of MAPK cascade.  </p>
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\pulsebroadening.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/c/c3/T--Tsinghua-A--pulsebroadening.png" alt="">
                         </div>
                     </div>
 
-                    <p> In this figure, the degradation of activated histamine receptor (RL) and the output of signal transmission (ste12active) is demonstrated.\citep{Bardwell1996Signaling} We are surprising that the system -- GPCR and MAPK in series connection has a function of pulse broadening. This function is because the amplification of MAPK cascade, which ensure the output transcription factor is stable while the input is really low. Thus, this part of the cascade ensures the stability of the output even if the input is a narrow pulse by pulse broadening.  </p>
-                    <p> And we run some parameter scan to analysis how the model works under various parameter sets. And we focus on the affinity of histamine receptor and the degradation rate of the activated histamine, which are both reckoned as highly sensitive parameters before.  </p>
-                    <p> The the affinity of histamine receptor and degradation rate of activate receptor scan results are showed below.  </p>
+                    <p> In this figure, the degradation of activated histamine receptor (RL) and the output of signal transmission (ste12active) is demonstrated. We are surprised that the system -- GPCR and MAPK in series connection has a function of pulse broadening. This function is because the amplification of MAPK cascade, which ensures the output transcription factor is stable while the input is really low. Thus, this part of the cascade ensures the stability of the output even if the input is a narrow pulse by pulse broadening.  </p>
+                    <p> And we run some parameter scan to analysis how the model works under various parameter sets. And we focus on the affinity of the histamine receptor and the degradation rate of the activated histamine, which are both reckoned as highly sensitive parameters before.  </p>
+                    <p> The the affinity of histamine receptor and degradation rate of activating receptor scan results are showed below.  </p>
 
                     <div class="img">
                         <div class="left-col">
                             <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\bingding_rate.png" alt="">
+                                <img src="http://2018.igem.org/wiki/images/c/c7/T--Tsinghua-A--bingding_rate.png" alt="">
                             </div>
                         </div>
                         <div class="right-col">
                             <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\RL.png" alt="">
+                                <img src="http://2018.igem.org/wiki/images/a/ab/T--Tsinghua-A--RL.png" alt="">
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -219,12 +218,12 @@ $("span.menu").click(function(){
                     <div class="img">
                         <div class="left-col">
                             <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\3dTimeSeries.png" alt="">
+                                <img src="http://2018.igem.org/wiki/images/e/e4/T--Tsinghua-A--3dTimeSeries.png" alt="">
                             </div>
                         </div>
                         <div class="right-col">
                             <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\3dTimeSeries2.png" alt="">
+                                <img src="http://2018.igem.org/wiki/images/6/67/T--Tsinghua-A--3dTimeSeries2.png" alt="">
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -233,18 +232,17 @@ $("span.menu").click(function(){
                     <p> From this figure, it is obvious that the concentration of EGFP soars at the first time and reach a peak,then gradually decreases, since the activated histamine receptor degrade as the time goes by. In addition, the concentration of EGFP monotonously changes as that of RL (input) goes up , which is an evidence that it is possible to test the concentration of activated receptor by that of EGFP.  </p>
 
                     <h2> Diagnosis Model </h2>
-                    <p> Diagnosis Model is a model constructed to design,analyze and optimize the diagnostic criteria of histamine testing we developed.In this testing, our purpose is to test whether the histamine concentration in a sample reach a certain level.If it does, we consider this kind of result as positive result, which means allergy is possibly happened.However,if the histamine concentration maintains in a background level, we consider it as a negative result.So the diagnosis model is indeed a classification model which focuses on the strategy to determine how we announce the testing result and how much we can believe in it. And, to be emphasized, this model is on the basis of the models we constructed before -- 'Reaction in system' and 'Signal pathway in a yeast'\citep{Isermann2005Model} </p>
-                    <!--NOTE cite-->
+                    <p> Diagnosis Model is a model constructed to design, analyze and optimize the diagnostic criteria of histamine testing we developed. In this testing, our purpose is to test whether the histamine concentration in a sample reaches a certain level. If it does, we consider this kind of result as a positive result, which means allergy has possibly happened. However, if the histamine concentration maintains at a background level, we consider it as a negative result. So the diagnosis model is indeed a classification model which focuses on the strategy to determine how we announce the testing result and how much we can believe in it. And, to be emphasized, this model is on the basis of the models we constructed before -- 'Reaction in system' and 'Signal pathway in a yeast. </p>
 
                     <h3> Diagnostic criteria design </h3>
-                    <p> Now we begin with the EGFP concentration in a yeast when certain amount of the histamine receptor activated, which is the output in the signal pathway model. From the figure 14, it is clear that the output is dynamic. However, using the whole time series as an output result is complicated in calculation and analysis. Thus, we decide to choose the output at a certain time as the output.Now the dilemma is how to choose the proper time that makes the testing is most accurate and effective.  </p>
-                    <p> The core concept is the greedy method here. As the result we observed in the figure 14, the EGFP outputs at certain time are different from the input, which means we can define a gap at certain time as follow </p>
+                    <p> Now we begin with the EGFP concentration in a yeast when certain amount of the histamine receptor activated, which is the output in the signal pathway model. From figure 14, it is clear that the output is dynamic. However, using the whole time series as an output result is complicated in calculation and analysis. Thus, we decide to choose the output at a certain time as the output. Now the dilemma is how to choose the proper time that makes the testing is most accurate and effective.  </p>
+                    <p> The core concept is the greedy method here. As the result we observed in figure 14, the EGFP outputs at a certain time are different from the input, which means we can define a gap at a certain time as follow </p>
                     <p> $$ gap(t)=max\{EGFP(t,RL_{max})\}-min\{EGFP(t,RL_{min})\} $$ </p>
-                    <p> The $RL_{max}$ and $RL_{min}$ in the definition mean the $RL$ values that let the EGFP in time $t$ has the maximum or minimum value respectively.Generally, $RL_{max}=RL_p$ and $RL_{min}=0$.The gap can be calculated and shown in the follow chart.  </p>
+                    <p> The $RL_{max}$ and $RL_{min}$ in the definition mean the $RL$ values that let the EGFP in time $t$ has the maximum or minimum value respectively.Generally, $RL_{max}=RL_p$ and $RL_{min}=0$.The gap can be calculated and shown in the following chart.  </p>
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\gap.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/8/86/T--Tsinghua-A--gap.png" alt="">
                         </div>
                     </div>
 
@@ -253,7 +251,7 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\plot_in_tmax.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/8/87/T--Tsinghua-A--plot_in_tmax.png" alt="">
                         </div>
                     </div>
 
@@ -268,7 +266,7 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\systemplot.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/5/59/T--Tsinghua-A--systemplot.png" alt="">
                         </div>
                     </div>
 
@@ -280,7 +278,7 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\dif.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/4/4d/T--Tsinghua-A--dif.png" alt="">
                         </div>
                     </div>
 
@@ -288,7 +286,7 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\ouput.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/f/f7/T--Tsinghua-A--ouput.png" alt="">
                         </div>
                     </div>
 
@@ -310,15 +308,8 @@ $("span.menu").click(function(){
                     <p>Then, we can use Monte Carlo methods to simulate the negative and positive result. We choose 100000 iterations Gibs Sampling to simulate this system. And the outcome is demonstrated below.</p>
 
                     <div class="img">
-                        <div class="left-col">
-                            <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\distrib.png" alt="">
-                            </div>
-                        </div>
-                        <div class="right-col">
-                            <div class="imgcard">
-                                <img src="c:\Users\tandf\Downloads\temp\Modeling\ouput.png" alt="">
-                            </div>
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/8/88/T--Tsinghua-A--distrib.png" alt="">
                         </div>
                     </div>
 
@@ -326,7 +317,7 @@ $("span.menu").click(function(){
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\ROC.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/0/09/T--Tsinghua-A--ROC.png" alt="">
                         </div>
                     </div>
 
@@ -349,20 +340,18 @@ $("span.menu").click(function(){
                         </div>
                     </div>
 
-                    <p> And we also use Monte Carlo method to simulate it and get a heat plot, which give us hints about how errors in system and input influence the testing quality. In this analysis, we use AUC to indicates the testing quality.  </p>
+                    <p> And we also use the Monte Carlo method to simulate it and get a heat plot, which gives us hints about how errors in system and input influence the testing quality. In this analysis, we use AUC to indicates the testing quality.  </p>
 
                     <div class="img">
                         <div class="imgcard">
-                            <img src="c:\Users\tandf\Downloads\temp\Modeling\errorcomparer.png" alt="">
+                            <img src="http://2018.igem.org/wiki/images/4/41/T--Tsinghua-A--errorcomparer.png" alt="">
                         </div>
                     </div>
 
-                    \includegraphics[scale=0.5]{errorcomparer.png}
-
-                    <p> From the heat chart, it is clear that the relative error in system has much less effect on the accuracy of testing than that of input, which imply us that it is vital to control the deviation of input. Thus, we have to find a stable and precise way to deal with our histamine samples.The better the input error is controlled, the more accurate the testing is.  </p>
+                    <p> From the heat chart, it is clear that the raative error in a system has much less effect on the accuracy of testing than that of input, which implies us that it is vital to control the deviation of input. Thus, we have to find a stable and precise way to deal with our histamine samples. The better the input error is controlled, the more accurate the testing is.  </p>
 
                     <h2> Acknowledgement </h2>
-                    <p> At the point of finishing this paper, I’d like to express my sincere thanks to all those teammates Li Yaqi Zuo Duyun etc. and advisors Mr. Wang Xiaobo Mr. Xie Zhen and Ms. Wang Jingjing who have lent me hands in the course of my writing this paper. Besides I would like to thank friends below who are not in our team but still give generous support to me.  </p>
+                    <p> At the point of finishing this paper, I’d like to express my sincere thanks to all those teammates Li Yaqi Zuo Duyun etc. and advisors Mr. Wang Xiaobo Mr. Xie Zhen and Ms. Wang Jingjing who have lent me hands in the course of my writing this paper. Besides, I would like to thank friends below who are not in our team but still give generous support to me.  </p>
 
                     <div class="attributionItem">
                         <div>
