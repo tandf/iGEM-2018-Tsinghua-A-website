@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+
+        <!-- Sticky Nav -->
+        <div id="header-nav" class="header-nav">
+            <div class="top-nav">       
+                <nav>
+                    <div class="logo">
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                    </div>
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Introduction</a></li>
+                                <li><a href="">Design and Test</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Tsinghua</a></li>
+                                <li><a href="">Team BIT-China</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background and design</a></li>
+                                <li><a href="">Achievements</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                        </li>   
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                        </li>       
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Members</a></li>
+                                <li><a href="">team suits</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                        </li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </nav>
+            </div>
+            <!--script-nav-->
+            <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+            </script>
+            <!--script-nav-->
+        </div>
+        <!-- top-nav -->
+        <!-- Sticky Nav -->
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Project Design
+                    </div>
+                </div>
+                <div class="page-content">
+                    <!-- NOTE content here-->
+                    <p>In our project, we attempted to use modified yeast Saccharomyces cerevisiae to mimic type I hypersensitive reaction in vitro. As former mentioned, two groups of cells play major role in allergy: the first group of cells (basophil granulocyte and mast cell) sense the existence of certain allergens, and release mediators; the second group of cells senses the concentration of mediators and carry on downstream physiological function, like endothelia cells of blood vessel. The activation of these two groups of cells could serve as indicators of allergen. For simplicity, we try to engineer yeast cells to emulate the behavior of the second group of cells.</p>
+                    <p>There are two kinds G protein coupled receptor (GPCR) pathway described in yeast Saccharomyces cerevisiae, Gpr1 pathway for sensing glucose, and Ste2/Ste3 pathway for sensing pheromone originates from yeast of opposite mating type (a/α). Yeast of α mating type secretes pheromone called α factor, and senses pheromone a factor from yeast of a mating type. Similarly, yeast of mating type a secretes a factor, and senses α factor. The mating pathway can be activated by pheromone from opposite mating type, inducing the transcription of mating related genes like Fus1 and Fig2. The pheromone sensing pathway of a-typed yeast is diagramed in fig 1.</p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/e/e2/T--Tsinghua-A--BG-Figure3.png" alt="" width="800">
+                            <p class="comments">fig 1. Pheromone sensing pathway of a-typed Saccharomyces cerevisiae. </p>
+                        </div>
+                    </div>
+
+                    <p>Former publications stated that some of human GPCRs can be successfully expressed in Saccharomyces cerevisiae, and functional coupled with its endogenous pheromone sensing pathway, activating transcription of genes like Fus1 and Fig2. It has been showed that replacing the five amino acids at C terminal of Gpa1 with the five amino acids at the very C end of the Gα subunit that originally interact with GPCR to be expressed in human body could increase the coupling efficiency. It’s also been suggested that interruption of the endogenous pheromone receptor ste2 in yeast of a mating type, as well as two modulators in wild type yeast, would increase the strength and signal/noise ratio of the reporting signal, as showed in fig 2. Modulator far1 can be activated by pheromone in wild type yeast, and traps the cell cycle; sst2 is another modulator, which catalyzes GTP that binds to Gpa1 to transform into GDP, thus negatively regulates the activity of Gpa1.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/5/52/T--Tsinghua-A--BG-Figure4.png" alt="" width="800">
+                            <p class="comments">fig 2. Modified a-typed Saccharomyces cerevisiae. Ste2, far1 and sst2 are knockout, five amino acids at C terminal are replaced with their counterparts in human G protein. </p>
+                        </div>
+                    </div>
+
+                    <p>Four kind of histamine receptors have been described in human, HRH1, HRH2, HRH3 and HRH4, all of which are GPCRs. HRH3 and HRH4 has relatively higher affinity to histamine. In our project, as showed in fig 3, we try to equip Gpa1 modified yeasts with human histamine receptor HRH4 and EGFP reporter gene under control of Fus1 promoter, to give out dosage dependent signal output when incubated in solution containing histamine. A simple hardware was also developed to provide real time monitoring of yeast concentration and the strength of signal output in a quantitative manner. The hardware also contains a vibration module to prevent yeast cells from precipitation during incubation.</p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/c/c4/T--Tsinghua-A--BG-Figure5.png" alt="" width="800">
+                            <p class="comments">fig 3. Design of yeast whole cell histamine sensor. </p>
+                        </div>
+                    </div>
+
+                    <p>Preliminary experiments suggested that yeast could grow well in human serum. The ultimate goal of our project is to implement a novel allergen test method (fig 4): the tester collects blood sample, directly adds certain allergen into whole blood, separates serum by centrifugation, incubates engineered yeast cells in serum with and without serum treatment respectively, measures the signal strength with our hardware, then the test results can be read of from the screen.  </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/8/89/T--Tsinghua-A--BG-Figure6.png" alt="" width="800">
+                            <p class="comments">fig 4. Flow chart of the whole project.</p>
+                        </div>
+                    </div>
+
+                    <h2>Reference</h2>
+                    <ul>
+                        <li>Bardwell L. A walk-through of the yeast mating pheromone response pathway.[J]. Peptides, 2004, 25(9):1465-1476.</li>
+                        <li>Bertheleme N, Singh S, Dowell S, et al. Heterologous expression of G-protein-coupled receptors in yeast[J]. Methods in Enzymology, 2015, 556:141-164</li>
+                        <li>Brown A J, Dyos S L, Whiteway M S, et al. Functional coupling of mammalian receptors to the yeast mating pathway using novel yeast/mammalian G protein α‐subunit chimeras[J]. Yeast, 2000, 16(1):11-22.</li>
+                        <li> P, Chazot P LPanula, Cowart M, et al. International Union of Basic and Clinical Pharmacology. XCVIII. Histamine Receptors.[J]. Pharmacological Reviews, 2015, 67(3):601.Ishii J, Oda A, Togawa S, et al. Microbial fluorescence sensing for human neurotensin receptor type 1 using Gα-engineered yeast cells[J]. Analytical Biochemistry, 2014, 446:37-43.</li>
+                        <li>Johnson G L, Dhanasekaran N. The G-protein family and their interaction with receptors.[J]. Endocrine Reviews, 1989, 10(3):317.</li>
+                        <li>Kiel C, Yus E, Serrano L. Engineering signal transduction pathways.[J]. Cell, 2010, 140(1):33-47.</li>
+                        <li>Ladds G, Goddard A, Davey J. Functional analysis of heterologous GPCR signaling pathways in yeast.[J]. Trends in Biotechnology, 2005, 23(7):367-373.</li>
+                        <li>Liu R, Wong W, Ijzerman A P. Human G protein-coupled receptor studies in Saccharomyces cerevisiae.[J]. Biochemical Pharmacology, 2016, 114:103-115.</li>
+                        <li>O'Malley M A, Mancini J D, Young C L, et al. Progress toward heterologous expression of active G-protein-coupled receptors in Saccharomyces cerevisiae: Linking cellular stress response with translocation and trafficking[J]. Protein Science, 2010, 18(11):2356-2370.</li>
+                        <li>Pausch M H, Lai M, Tseng E, et al. Functional expression of human and mouse P2Y12 receptors in Saccharomyces cerevisiae. [J]. Biochemical & Biophysical Research Communications, 2004, 324(1):171-177.</li>
+                        <li>Tehseen M, Dumancic M, Briggs L, et al. Functional Coupling of a Nematode Chemoreceptor to the Yeast Pheromone Response Pathway[J]. Plos One, 2014, 9(11): e111429.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+</html>
