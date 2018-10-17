@@ -1,0 +1,410 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+
+    <!-- Sticky Nav -->
+    <div id="header-nav" class="header-nav">
+        <div class="top-nav">       
+            <nav>
+                <div class="logo">
+                    <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                </div>
+                <span class="menu"></span>
+                <ul>
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#Overview">Overview</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#DesignedStepsForUsage">DesignedStepsForUsage</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#PerformanceTesting">PerformanceTesting</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#DesignAndComponents">DesignAndComponents</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#Manufacture">Manufacture</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Hardware#FuturePlan">FuturePlan</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/TeamTsinghua">Team Tsinghua</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/TeamBITCHINA">Team BIT-China</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="">Background and design</a></li>
+                            <li><a href="">Achievements</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                    </li>   
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                    </li>       
+                    <li>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                    </li>
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                            <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="">Team Members</a></li>
+                            <li><a href="">team suits</a></li>
+                        </ul>
+                        <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                    </li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </nav>
+        </div>
+        <!--script-nav-->
+        <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+        </script>
+        <!--script-nav-->
+    </div>
+    <!-- top-nav -->
+    <!-- Sticky Nav -->
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Hardware
+                    </div>
+                    <div class="head-subtitle">
+                        <!-- NOTE subtitle here-->
+                        Integrated diagnosis kit
+                    </div>
+                </div>
+                <div class="page-content">
+                    <!-- NOTE content here-->
+
+                    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} }); </script>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+                    <div class="anchor" id="Overview"></div>
+                    <h2> Overview </h2>
+                    <p>In order to achieve portable and simple field allergy detection, we designed and manufactured the hardware testing equipment for this project - a small, inexpensive ($20) system, including a device can measure OD600 and fluorescence intensity, and a small automatic vibration device avoiding the sinking of cells.</p>
+                    <p>The device supports battery or micro USB for power supply. According to the prompts on the display, you can get started quickly; the device will judge your allergies based on the cell concentration and fluorescence intensity after a certain period of reaction.</p>
+                    <p>In addition to the detection applied to this project, this device can also be used in other environments where fast and portable spectrophotometric detection or fluorescence intensity detection is needed. </p>
+                    <p>We refer to the design of Team Aachen, 2014, but our Devices are more automated and miniaturized.</p>
+
+                    <div class="anchor" id="DesignedStepsForUsage"></div>
+                    <h2>Designed steps for usage</h2>
+                    <li>Activate the yeast.</li>
+                    <li>Mix the blood and allergen, turn on our measure device (click the power button on the left).</li>
+                    <li>After the time on the display is completed, or press the GO button to skip the timing, with another timer, add the serum (filter with a syringe and filter to obtain serum / if it is a hospital scene, the blood drawn from the vein can be centrifuged) and t yeast solution to the cuvette; cover with waterproof breathable membrane.</li>
+                    <li>Open the lid, place the cuvette in the test hole, then close the lid, and press 'GO'.</li>
+                    <li>When the display prompts, stick the vibrating device to the cuvette and insert the battery, press 'GO'.</li>
+                    <li>When the oscillation time is up, remove the motor, then close the cover and press 'GO'.</li>
+                    <li>Wait for the result to appear on the display.</li>
+                    <li>Double-click the power button to turn off the power. Dispose of waste.</li>
+
+                    <div class="anchor" id="PerformanceTesting"></div>
+                    <h2>Performance testing</h2>
+                    <h3> OD Function Testing </h3>
+                    <h4> Test method </h4>
+                    <p> We made two groups of a series of cells samples with different concentration by gradient dilution. And we used OD function of our device and spectrophotometer to test the sample respectively. By this way, we can get a relation between the readout of our kit and the real OD value. If the relation is linear, we can use a linear model to analyze and predict.  </p>
+
+                    <h4> Result </h4>
+                    
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/f/f3/T--Tsinghua-A--hardware-ODtest.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> $$ spectrophotometer=-0.06759+4.61774 DeviceReadout_i+\epsilon_i /; \epsilon_i~N(0,0.0052) $$ </p>
+                    <p> Taking the OD values measured by spectrophotometer as real values, it is obvious that the real OD values can be derived from the readout of our device, which means that our device is able to measure the OD value of samples accurately.  </p>
+
+                    <h3> Florescence Function Testing </h3>
+                    <h4> Test method </h4>
+                    <p> As we already derived the model of OD function of our kit, we design a method to test our florescence function based on it. We made a group of cells samples that steadily express the fluorescence protein by gradient dilution, and use our hardware to measure the OD values and Fluorescence intensity of each sample. As the criteria of the method, the OD values should be proportion to the fluorescence intensity of samples. So we use this method to test if the florescence function of our kit can actually work on florescence intensity testing.  </p>
+
+                    <h4> Result </h4>
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/9/9d/T--Tsinghua-A--hardware-FLtest.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> $$ FL_i=53.828+88.287OD_i+\epsilon_i /; \epsilon_i~N(0,6.16) $$ </p>
+                    <p> The linear regression model is shown above, which implies us that the florescence function can regularly work. And it can test the florescence based on the linear model we made.  </p>
+
+                    <p> Tip (For testing data and more details about data analysis, please look up in *file*) </p>
+
+                    <div class="anchor" id="DesignAndComponents"></div>
+                    <h2>Design and components</h2>
+                    <p>In order to make such a device, we have to minimize the size when we select of the components and design the bracket.</p>
+
+                    <h3>The overall design</h3>
+                    <p>Our reaction system is about 800μL, which heights approximately 8mm in the common 10mm cuvette. Therefore, we choose the position which optical pass is 4mm high. Although simply changing filter paper can reuse photosensor, to make it more automatically, we use two photosensors with different light filters to sense different light. Optical pass design is displayed in figure. If we switch on LED in a certain order and measure light intensity respectively, we can calculate the intensity of transmitted light. According to the intensity results before and after the reaction, we obtain the cell density and fluorescent intensity in the solution.</p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/7/7b/T--Tsinghua-A--hardware-structure1.png" alt="">
+                        </div>
+                    </div>
+
+                    <p> The 3D-printed cuvette brace offered space for LED and photosensor to be attached. The space for the cuvette is slightly larger than the size of cuvette, leaving extra space for vibration. During the measurement, inlay the cuvette into the fitting hole in order to fix it.  </p>
+                    <p> The 3D-printed shell is a box with four interfaces attached to the brace. The baffle plate covers and protects details of the system, leaving a hole for the cuvette.  </p>
+
+                    <div class="img">
+                        <div class="col2">
+                            <div class="imgcard">
+                                <p><strong> Processor </strong></p>
+                                <p>Beetle</p>
+                                <p>We chose a small MCU - Beetle based on Arduino Leonardo as processor. It is very small in size, only 20mm by 22mm. In addition, it has a microUSB which can be burned directly, and it can also be connected by wire directly, which is very convenient for debugging.</p>
+                            </div>
+                            <div class="imgcard">
+                                <p><strong>Filters</strong></p>
+                                <p> We use reden filter paper as our filters, which is usually used in photography. It is not as good as professional filter but it is cheaper and easy to obtain in China.  </p>
+                                <p>More info: 
+                                <a href="http://2018.igem.org/wiki/images/5/5a/T--Tsinghua-A--hardware-filter1.png">link1</a>
+                                <a href="http://2018.igem.org/wiki/images/0/03/T--Tsinghua-A--hardware-filter2.png">link2</a>
+                                </p>
+                            </div>
+                            <div class="imgcard">
+                                <p><strong> Power Module </strong></p>
+                                <p>For portable purposes, we use both batteries and power cords for power supply. Specifically, we use a 150mAh battery, a power management module suitable for lithium battery, and a micro USB interface for charging. It is connected to a button, which is clicked for start and double - clicked for shutdown. </p>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="imgcard">
+                                <p><strong> Photosensitive Sensor </strong></p>
+                                <p>TSL235R</p>
+                                <p>The same as Team Aachen, we choose this photosensitive sensor for its small size, which is only 4.6*2.6*4.6</p>
+                            </div>
+                            <div class="imgcard">
+                                <p><strong> LED </strong></p>
+                                <p>We use 605nm and 485nm LED, which variance is less than 5nm.</p>
+                            </div>
+                            <div class="imgcard">
+                                <p><strong> Temperature Sensor </strong></p>
+                                <p>LM35DZ</p>
+                                <p>LM35DZ  is a cheap and fine temperature sensor, we use it to remind the users to put the yeast in a proper temperature for cultivation.</p>
+                            </div>
+                            <div class="imgcard">
+                                <p><strong> Display Screen </strong></p>
+                                <p>In order to display the results visually, we choose to use the display screen to demonstrate the results. We choose a small display screen,0.96 inch, which uses the IIC communication protocol</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div>
+                        <table border="1">
+                            <tr> <th>Component</th> <th>Quantity</th> <th>Total Price</th> </tr>
+                            <tr> <td>Beetle</td> <td>1</td> <td>￥49</td> </tr>
+                            <tr> <td>TSL235</td> <td>2</td> <td>￥20</td> </tr>
+                            <tr> <td>LED</td> <td>605nm,485nm</td> <td>￥10</td> </tr>
+                            <tr> <td>Light filter</td> <td>Scarlet*2,Light Green</td> <td>￥0.75</td> </tr>
+                            <tr> <td>LM35</td> <td>1</td> <td>￥4.7</td> </tr>
+                            <tr> <td>Battery</td> <td>1</td> <td>￥9.9</td> </tr>
+                            <tr> <td>Power Module</td> <td>1</td> <td>￥12.8</td> </tr>
+                            <tr> <td>MicroUSB</td> <td>1</td> <td>￥49</td> </tr>
+                            <tr> <td>OLED Displayer</td> <td>1</td> <td>￥12.7</td> </tr>
+                            <tr> <td>3D printed parts (material)</td> <td>4</td> <td>￥5</td> </tr>
+                            <tr> <td>self-locking switch key</td> <td>1</td> <td>￥0.26</td> </tr>
+                            <tr> <td>Wires(AWG30)</td> <td>3</td> <td>￥3</td> </tr>
+                            <tr> <td>Cuvette 4.5mL</td> <td>1</td> <td>￥0.7</td> </tr>
+                            <tr> <td>button cel CR1225</td> <td>5</td> <td>￥8.8</td> </tr>
+                            <tr> <td>button cell holder</td> <td>1</td> <td>￥0.91</td> </tr>
+                            <tr> <td>vibration motor</td> <td>1</td> <td>￥1.78</td> </tr>
+                            <tr> <td><strong>Total</strong></td> <td>&nbsp;</td> <td>135.7($20.67)</td> </tr>
+                        </table>
+                    </div>
+
+                    <div class="anchor" id="Manufacture"></div>
+                    <h2>Manufacture</h2>
+                    <style>
+.tree, .tree ul {
+    margin:0 0 0 1em; /* indentation */
+    padding:0;
+    list-style:none;
+    color: #333333;
+    position:relative;
+}
+.tree ul {margin-left:.5em} /* (indentation/2) */
+.tree:before, .tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid;
+}
+.tree li {
+    margin:0;
+    padding:0 1.5em; /* indentation + .5em */
+    line-height:2em; /* default list item's `line-height` */
+    font-weight:bold;
+    position:relative;
+}
+.tree li:before {
+    content:"";
+    display:block;
+    width:10px; /* same with indentation */
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px; /* border top width */
+    position:absolute;
+    top:1em; /* (line-height/2) */
+    left:0;
+}
+.tree li:last-child:before {
+    background:#f8f6df; /* same with body background */
+    height:auto;
+    top:1em; /* (line-height/2) */
+    bottom:0;
+}
+                    </style>
+
+                     <h3> cuvettes </h3>
+                    <div class="sitemap_tree">
+                        <ul class="tree">
+                            <li>use a four-sided smooth cuvette for laser cutting to make it 30mm high.</li>
+                            <li>Buy or make a proper cover for it.</li>
+                            <li>Prepare some PTFE membrane</li>
+                        </ul>
+                    </div>
+
+                    <h3> Vibration device 
+                        <a href="https://drive.google.com/open?id=1ZGmxePx04Q3m2KZHqcvqYnkjHjCoo5fc">Video</a>
+                    </h3>
+                    <div class="sitemap_tree">
+                        <ul class="tree">
+                            <li>Vibration motor</li>
+                            <li>Button battery</li>
+                            <li>Button battery holder</li>
+                        </ul>
+                    </div>
+                    <p>Connect the holder and motor, and fix it with adhesive. Put in the battery when use it.</p>
+
+                     <h3> Testing device </h3>
+                    <div class="sitemap_tree">
+                        <ul class="tree">
+                            <li>3D printing file for the shell and stent</li>
+                            <li><a href="http://github.com/RLi43/iGEM.git"><u>3D Pringting Files</u></a>
+                                <ul>
+                                    <li>You can change shape of holes in the model to fit your buttons and microUSB </li>
+                                    <li>Try to use a lightproof material for 3D printing. If you don't have one, just try to make it light-tight. </li>
+                                </ul>
+                            </li>
+                            <li>Wiring</li>
+                            <ul>
+                                <li>Analog 
+                                    <ul>
+                                        <li>LED*2(remember to have a 10K resistance in series!) - A9 A10</li>
+                                        <li>LM35 – A11</li>
+                                    </ul>
+                                </li>
+                                <li>Digital
+                                    <ul>
+                                        <li>Button “Go” – D9</li>
+                                        <li>TSL235 – interrupt pin D0, D1(same to Serial1 Tx, Rx)</li>
+                                    </ul>
+                                </li>
+                                <li>IIC
+                                    <ul> <li>SCK,SDA to displayer (remove pin header to save the room)</li> </ul>
+                                </li>
+                                <li><a href="http://2018.igem.org/wiki/images/f/f9/T--Tsinghua-A--hardware-powermodule.png">Power Module </a></li>
+                                <li> Layout
+                                    <ul>
+                                        <li><a href="http://2018.igem.org/wiki/images/1/14/T--Tsinghua-A--layout1.png">Lower level layout picture</a></li>
+                                        <li><a href="http://2018.igem.org/wiki/images/d/d6/T--Tsinghua-A--hardware-layout2.png">Upper level layout picture</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li>Programme <a href="http://github.com/RLi43/iGEM.git"><u>Code</u></a> </li>
+                        </ul>
+                    </div>
+                    <p>Connect the holder and motor, and fix it with adhesive. Put in the battery when use it.</p>
+
+                    <div class="anchor" id="FuturePlan"></div>
+                    <h2>Future Plan</h2>
+                    <li>Use more proper filters to improve the precision</li>
+                    <li>Try to find a better solution for vibration</li>
+                    <li>Perfect the appearance</li>
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+</html>
