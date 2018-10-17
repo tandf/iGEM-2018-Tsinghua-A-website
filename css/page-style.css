@@ -149,6 +149,22 @@ div.content div.page-content h4{
     margin: 30px 0 15px;
 }
 
+div.content div.page-content img.iconright,
+div.content div.page-content img.iconleft{
+    width: 130px;
+    margin: 30px;
+}
+div.content div.page-content img.iconright{
+    float: right;
+}
+div.content div.page-content img.iconleft{
+    float: left;
+}
+div.content div.page-content img.iconright + *,
+div.content div.page-content img.iconleft + *{
+    /*text*/
+}
+
 div.pagefooter{
     text-align:left;
     background:#555;
