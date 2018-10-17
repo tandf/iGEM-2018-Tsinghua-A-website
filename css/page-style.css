@@ -82,11 +82,11 @@ div.content div.page-content div.img a{
 }
 div.content div.page-content div.img a,
 div.content div.page-content div.img a *{
-    transition:0.5s all;
-    -webkit-transition:0.5s all;
-    -moz-transition:0.5s all;
-    -o-transition:0.5s all;
-    -ms-transition:0.5s all;
+    transition:         0.2s all;
+    -webkit-transition: 0.2s all;
+    -moz-transition:    0.2s all;
+    -o-transition:      0.2s all;
+    -ms-transition:     0.2s all;
 }
 div.content div.page-content div.img a:hover *{
     opacity: 0.8;
