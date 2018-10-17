@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+
+        <!-- Sticky Nav -->
+        <div id="header-nav" class="header-nav">
+            <div class="top-nav">       
+                <nav>
+                    <div class="logo">
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                    </div>
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Introduction</a></li>
+                                <li><a href="">Design and Test</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Tsinghua</a></li>
+                                <li><a href="">Team BIT-China</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background and design</a></li>
+                                <li><a href="">Achievements</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                        </li>   
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                        </li>       
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Members</a></li>
+                                <li><a href="">team suits</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                        </li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </nav>
+            </div>
+            <!--script-nav-->
+            <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+            </script>
+            <!--script-nav-->
+        </div>
+        <!-- top-nav -->
+        <!-- Sticky Nav -->
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Background
+                    </div>
+                    <div class="head-subtitle">
+                        <!-- NOTE subtitle here-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <!-- NOTE content here-->
+                    <p>Allergy, also known as type I hypersensitivity reaction, is defined as hypersensitivity to substances commonly recognized as harmless, resulting in inflammatory reaction, and symptoms like asthma, rash and running nose, severe allergy can be lethal. These typically harmless substances are called allergens. Allergens are everywhere, people may get exposed to allergens in various ways: direct oral ingestion of food allergens, breathe in airborne allergens like pollens and dust, skin exposure to allergens like latex and the fur or feather of home pets, injection of drugs, or some components in insects' poisons, etc. These years, money spent in combating with allergy is mounting up to astronomical figures. Allergen test is a powerful method to deal with allergy. One will try to avoid exposure to his/her allergens in daily life if their allergens are identified, and their chance to develop allergy will be reduced. That's why most medical centers around the world provide allergen test services.</p>
+                    <p>As diagramed in figure 1, when a kind of allergen somehow enters the body fluid of someone for the first time, the allergens are captured by antigen presenting cells (APCs), then T cells' recognition of the epitopes presented by APCs, and induces series of signal transduction and cell differentiation events. The overall result is, some of the B cells differentiate into plasma cells, producing IgE specifically targets on different epitopes of these allergens. </p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/8/84/T--Tsinghua-A--BG-Figure1.png" alt="" width="800">
+                            <p>Figure 1. The basic mechanism of developing allergy. A: Antigen presenting cells present allergens to T cells via MHCⅡ. B: T cells is induced to differentiate into Th2 cells. C: With the help of Th2 cells, B cells differentiate into plasma cells, secreting specific IgE targets on the allergen. E: IgEs bind to FcεRI receptors in the membrane of basophil granulocytes and mast cells. F: The presence of the allergens induces the crosslink of FcεRI receptors, leads to the release of mediators. </p>
+                        </div>
+                    </div>
+
+                    <p>These IgEs circulate around with the serum, a fraction of IgEs will bind to the α chain of so called high affinity receptor FcεRI with its constant region in its heavy chain. FcεRI is expressed in the plasma membrane of basophil granulocyte in the blood, and its tissue-embedded counterpart, mast cell. The rest of IgEs remain solutes in the serum. Basophil granulocyte and mast cell both contain pre-synthesized mediator components, like histamine, neutrophil chemotactic factor, platelet activating factor, etc, storing in the vesicles inside the cell. </p>
+                    <p>When this guy encounters the same allergen the second time, IgEs in the surface of his/her basophil granulocytes and mast cells may be pulled together by the allergen, since the variable regions of different IgEs target on the same allergen bind to different epitopes of the allergens. The aggregation of IgE results in the aggregation of FcεRI, which subsequently triggers intracellular signal transduction, finally leads to calcium influx, then the vesicles in the cell fuse with plasma membrane, and the mediators are released. The mediators directly induce allergy symptoms. For example, histamine released from basophil granulocytes will bind to vascular endothelial cell nearby, mediating contraction of endothelial cell, inducing increase in vascular permeability and blood flow, and local swelling.</p>
+                    <p>Currently, the most commonly used allergen test methods can be roughly divided into two classes. Some methods, like skin prick test, intradermal test and patch test, belongs to the first class. People’s skin is directly exposed to a variety of common allergens. The tester observes whether there are signs of hypersensitive response. In other methods, blood sample from individuals to be tested are collected, and immunological technologies like ELISA (enzyme-linked immunosorbent assay, see figure 2) and RAST (radioallergosorbent test) are utilized to determine the concentration of IgE target on specific allergen.</p>
+
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/a/ad/T--Tsinghua-A--BG-Figure2.png" alt="" width="800">
+                            <p>Figure 2. Test allergens with ELISA. A. Various allergens were pre-coated in solid surface. B. Serum of the one to be tested is added, and specific antibodies in the serum, if any, bind to the allergens. C. Enzyme conjugated antibodies target on IgE are added. D. Substrate of the enzyme is added, yielding colored product. The density of color is an indicator of specific IgE concentration in the serum.</p>
+                        </div>
+                    </div>
+
+                    <p>Both of these two classes of methods have several drawbacks. Skin tests requires well trained medical workers; these tests themselves may result in hypersensitive response, hence are not suited for ones with severe allergy; prick test is painful, some children and their parents are not willing to do such test; also, anti-allergy medicines like antihistamine drug and cortisone, can interfere the test, increasing the possibility of yielding false negative result. </p>
+                    <p>Erological tests for IgE is more safe and accurate, since it only requires blood sample, and the influences of most anti-allergy drugs on the concentration of serum IgE is negligible. In addition, serum IgE assay can be operated by technicians without systematic medical training. However, serological tests are much more expensive, and requires relatively long time. </p>
+                    <p>These drawbacks motivate us to develop a novel allergen test method combining the advantages of skin test and serological assay, which we called ATM (allergen test master). ATM is a high cost-effective method based on yeast whole cell biosensor, which can be operated in vitro by people without any medical training, and capable of giving out test results within 24 hours.</p>
+
+                    <h2>Reference</h2>
+                        <li>Budde I K, Heer P G D, Zee J S V D, et al. The Stripped Basophil Histamine Release Bioassay as a Tool for the Detection of Allergen-Specific IgE in Serum[J]. International Archives of Allergy & Immunology, 2001, 126(4):277-285.</li>
+                        <li>Dennis R. Burton. Roitt’s Essential Immunology, 12th Edition[J]. 2011, 44(7):1408.</li>
+                        <li>Jensen B M, Falkencrone S, Skov P S. Measuring histamine and cytokine release from basophils and mast cells.[J]. Methods in Molecular Biology, 2014, 1192:135-145.</li>
+                        <li>Panula P, Chazot P L, Cowart M, et al. International Union of Basic and Clinical Pharmacology. XCVIII. Histamine Receptors.[J]. Pharmacological Reviews, 2015, 67(3):601.</li>
+                        <li>Saarinen K M, Suomalainen H, Savilahti E. Diagnostic value of skin-prick and patch tests and serum eosinophil cationic protein and cow's milk-specific IgE in infants with cow's milk allergy[J]. Clinical & Experimental Allergy, 2010, 31(3):423-429.</li>
+                        <li>van Hengel A J. Food allergen detection methods and the challenge to protect food-allergic consumers[J]. Analytical & Bioanalytical Chemistry, 2007, 389(1):111-118.</li>
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+</html>
