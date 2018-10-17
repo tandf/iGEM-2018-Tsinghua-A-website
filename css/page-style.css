@@ -80,6 +80,7 @@ div.content div.page-content div.img a{
     color: #333;
     font-size: 100%;
 }
+div.content div.page-content div.img a,
 div.content div.page-content div.img a *{
     transition:0.5s all;
     -webkit-transition:0.5s all;
@@ -90,22 +91,31 @@ div.content div.page-content div.img a *{
 div.content div.page-content div.img a:hover *{
     opacity: 0.8;
 }
-div.content div.page-content div.img .left-col,
-div.content div.page-content div.img .right-col{
-    width: 46%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+div.content div.page-content div.img a:hover div.imgcard{
+    box-shadow:
+        0 4px 5px 2px rgba(0, 0, 0, 0.50),
+        0 1px 10px 2px rgba(0, 0, 0, 0.40),
+        0 2px 4px 1px rgba(0, 0, 0, 0.70);
 }
-div.content div.page-content div.img .right-col{
-    margin-left: 2%;
-    margin-right: 2%;
-    float: right;
-}
-div.content div.page-content div.img .left-col{
-    margin-right: 2%;
-    margin-left: 2%;
+div.content div.page-content .left-col,
+div.content div.page-content .right-col,
+div.content div.page-content .col2{
+    width: 48%;
+    margin: 10px 0;
     float: left;
 }
+div.content div.page-content .col2 + .col2{
+    margin-left: 4%;
+}
+div.content div.page-content .col3{
+    width: 32%;
+    margin: 10px 0;
+    float: left;
+}
+div.content div.page-content .col3 + .col3{
+    margin-left: 2%;
+}
+
 div.content div.page-content div.img div.imgcard p,
 div.content div.page-content div.img div.imgcard h2,
 div.content div.page-content div.img div.imgcard h3,
@@ -115,7 +125,7 @@ div.content div.page-content div.img div.imgcard h4{
 div.content div.page-content div.img div.imgcard p.comments{
     color: #999;
 }
-div.content div.page-content div.img img{
+div.content div.page-content img{
     width: 100%;
 }
 
