@@ -277,7 +277,6 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
 }
 input,
 button,
@@ -752,6 +751,11 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1350px;
   }
 }
 .container-fluid {
