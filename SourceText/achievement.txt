@@ -1,0 +1,62 @@
+//Test of EGFP expression in modified yeast upon histamine induction
+
+After successfully transferred the plasmid ADH1-HRH4-Ter and pFUS1-EGFP into CENPK2-1C ura3::far1 his2::sst2 trp3::ste2 △ura3 Saccharomyces cerevisiae, we had already finished the modification process of yeast. Now it’s time to test whether our diagnostic yeast works! Based on our previous design, the modified yeast could respond to different ratio of histamine in environment at corresponding EGFP expression level. At meantime, the protein expression rate is also influence by culturing time after first induction. Due to the modelling, the higher the histamine concentration is, the faster yeast will respond and so is the protein degradation rate. So we made a prediction that the EGFP expression rate would positively correspond to histamine concentration in a certain time period after histamine induction.
+Based on the above assumptions, we chose to induce the modified yeast already cultured to logarithm phase in medium lacking His, Trp, Leu and Ura. Then a histamine concentration gradient was made by adding a diverse range of histamine solution to the culture medium. According to medical research, the histamine concentration in normal human blood is around 30 ng/ml to 60ng/ml, while in allergic people, this concentration would reach 100 ng/ml or even more. We set three group of histamine concentration: 0 ng/ml as control group, 50 ng/ml to simulate the normal concentration and 200 ng/ml to simulate allergic concentration. 
+According to the test of reporter plasmid, we estimated the expression peak would be between 5 to 10 hours, so we choose 5h, 8h and 11h as three time points to run flow cytometry.
+One thing worth mentioning is that due to the low concentration of yeast, we could only set 10 group so as to meet the criterion concentration of FCS.
+The group set is as follow:
+
+Table 1. The sample loading order
+http://2018.igem.org/wiki/images/1/11/T--Tsinghua-A--achivementTable2.png
+
+The concentration of yeast is around 100000 cell/ml (measured by OD600). We pick 10000 events inside the gate for each sample during FCS.
+The FCS result is as follow: 
+
+http://2018.igem.org/wiki/images/0/0d/T--Tsinghua-A--achievementFig1.png
+Fig.1 The relative fluorescence intensity of histamine induced yeast
+
+From Fig.1, we can see that at 5 to 8 hours’ culturing, the EGFP expression rate is positively correspond to histamine which certify our theory. When we judge each concentration group separately, it can be assumed that 50 ng/ml and 200 ng/ml group both reach its peak during 5 to 11 hours’ period. The degradation rate of each group is also positive correspond with histamine concentration, since at 11h, the expression level of every induction group has fallen, and the expression rate appears to be rather negative correlated to histamine concentration.
+
+Considering the fact that the reaction time we had estimated for our allergy test kit is around 4 to 5 hours, it turned out that the modified yeast could indeed distinguish between allergic state blood serum and normal blood serum.
+
+//Growth curve.
+In order to certify the feasibility of yeast maintaining its previous cell activity while reacting with histamine in blood serum, rather than become incompetent or being precipitated by antigens such as IgG in the environment, we carried out a series of experiment by culturing modified yeast in different ratio of blood serum. The ability of proliferation as well as cell activity are revealed by determination of growth curve in different groups. 
+One thing worth mentioning is that the blood serum (BS) we use is derived from mice with no immunogenicity. After extracted from mice, the product simply went through the procedure of precipitation and bottled without heat inactivation. Control group was set by filter sterilized half of the blood serum (FBS) to remove large protein and potential bacteria (. This procedure aims to judge whether the complement protein would influence the growth of yeast. 
+The experiment is designed as follows.
+
+http://2018.igem.org/wiki/images/0/03/T--Tsinghua-A--exp-IncreaceCurveTable.png
+Table 2. The sample loading form
+
+Due to the fact that normally yeast would enter logarithmic growth phase in 4 to 8 hours, we choose 1~7 h as the 1st stage measure point and 18~19h as the 2nd stage measure point to judge whether the yeast has entered plateau phase. The density of yeast is measured by OD600.
+
+http://2018.igem.org/wiki/images/8/8a/T--Tsinghua-A--IncreaceCurveFig1.png
+Fig.2 The growth curve of yeast cultured in YPD
+
+E: 10% BS+YPD  F: 10% FBS+YPD  I: 1% BS+YPD  J: 1% FBS+YPD
+
+As can be seen from Fig.1, the addition of blood serum didn’t influence the growth of yeast significantly.
+
+http://2018.igem.org/wiki/images/7/76/T--Tsinghua-A--IncreaceCurveFig2.png
+Fig.2 The growth curve of yeast cultured in water
+
+C: 10% BS+ water  D: 10% FBS+ water  G: 1% BS+ water  H: 1% FBS+ water
+
+On the contrast, the addition of blood serum did enhance the proliferation of yeast when comparing the curve of H and G with C and D. What’s more, comparing the curve of adding the original blood serum or sterilized one, we can see that the original blood help yeast to grow better without any precipitation.
+
+http://2018.igem.org/wiki/images/e/e0/T--Tsinghua-A--IncreaceCurveFig3.png
+Fig.3 The growth curve of yeast cultured in pure blood serum
+
+A: 100% BS  B: 100% FBS
+
+Compared the curve of original blood serum culturing and the sterilized one, it is obvious that the yeast cultured in original product outgrew the sterilized group in the first few hours. Though the two group reach the same level after 19 hours culturing, we could still judge the original blood serum to be better since the reaction time we had estimated for our ATM testing box is around 4 to 5 hours ---- still within the dominant period of original blood serum culturing.
+
+http://2018.igem.org/wiki/images/6/6b/T--Tsinghua-A--hardware-IncreaceCurveFig4.png
+Fig.4 The growth curve of yeast
+
+A: 100% BS B: 100% FBS 
+C: 10% BS+ water  D: 10% FBS+ water  G: 1% BS+ water  H: 1% FBS+ water
+E: 10% BS+YPD  F: 10% FBS+YPD  I: 1% BS+YPD  J: 1% FBS+YPD
+
+The overall graphic shows that the growth rate of yeast in YPD is faster than water, while during the estimated reaction time, the whole blood serum group also outgrew the water group. The above results suggest that blood serum won’t disturb the proliferation and cell activity of yeast, and even enhance them in water environment. The dominance of original blood serum leads to convenience that users don’t need to filter or heat inactivate complement protein to avoid precipitation.
+In conclusion, the modified yeast could survive in blood serum environment provided by users which is the testing environment in our design normally, without any need of further processing.
+
