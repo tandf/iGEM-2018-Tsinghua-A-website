@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/page-style.css" rel="stylesheet" type="text/css" media="all" />
+        <!------ js ------>
+        <script src="js/jquery.min.js"> </script>
+        <!------ js ------>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+});
+        </script>
+        <!---- start-smoth-scrolling---->
+        <script src="js/myscript.js"> </script>
+        <!--- fonts --->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+        <!-- fonts -->
+    </head>
+    <body>
+
+        <!-- Sticky Nav -->
+        <div id="header-nav" class="header-nav">
+            <div class="top-nav">       
+                <nav>
+                    <div class="logo">
+                        <a href="#home" class="scroll"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" class="nav-logo"/></a>
+                    </div>
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Introduction</a></li>
+                                <li><a href="">Design and Test</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Hardware">Hardware<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Tsinghua</a></li>
+                                <li><a href="">Team BIT-China</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Collaborations">Collaborations<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Background and design</a></li>
+                                <li><a href="">Achievements</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Experiments">Experiments<span class="caret"></span></a>
+                        </li>   
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#ReactionInSystem">Reaction in system</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#SignalPathwayInAYeast">Signal pathway in a yeast</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#DiagnosisModel">Diagnosis Model</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Model#Acknowledgement">Acknowledgement</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Model">Model<span class="caret"></span></a>
+                        </li>       
+                        <li>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Attributions">Attributions</a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <p style=" margin: 0; padding: 3px 20px; text-align: left; line-height: 160%; font-size: 18px; text-transform: uppercase; font-weight: 700; ">Questionnaire</p>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Introduction">Introduction</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Objective">Objective</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Methodology">Methodology</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Result">Result</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Summary">Summary</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#Expert">experts' view</a></li>
+                                <li><a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices#CCiC">CCiC</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Human_Practices">Human Practices<span class="caret"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="">Team Members</a></li>
+                                <li><a href="">team suits</a></li>
+                            </ul>
+                            <a href="http://2018.igem.org/Team:Tsinghua-A/Team">Team<span class="caret"></span></a>
+                        </li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </nav>
+            </div>
+            <!--script-nav-->
+            <script>
+$("span.menu").click(function(){
+    $(".top-nav ul").slideToggle("slow" , function(){
+    });
+});
+            </script>
+            <!--script-nav-->
+        </div>
+        <!-- top-nav -->
+        <!-- Sticky Nav -->
+
+        <!-- page-content -->
+        <div class="content">
+            <div class="container">
+
+                <div class="page-head">
+                    <div class="head-title">
+                        <!-- NOTE title here-->
+                        Imporve
+                    </div>
+                    <div class="head-subtitle">
+                        <!-- NOTE subtitle here-->
+                    </div>
+                </div>
+                <!-- NOTE content here-->
+
+                <div class="page-content">
+                    <h2>Improvement of a previous part </h2>
+                    <p>BBa_K511401 HRH4-TEVs-GV16 Signaling Receptor MammoBlock (created by Group: iGEM11_MIT 2011-09-27)</p>
+                    <p>We based on this part, kept the coding sequence of HRH4 and added a new promoter ADH1, a new tag mcherry and ADH1 terminator. Then, we got our new part BBa_K2583001, in our project, its function is not related the original one, it is used to test the expression and the location of human histamine receptor H4 (HRH4) in yeast, it lays the foundation for the subsequent experiments. </p>
+
+                    <h3> More Information </h3>
+                    <p><a href="http://parts.igem.org/Part:BBa_K511401"><u>BBa_K511401</u></a></p>
+                    <p><a href="http://parts.igem.org/Part:BBa_K2583001"><u>BBa_K2583001</u></a></p>
+                    
+                    <h2>Experiment</h2>
+                    <h3>Fluorescence microscopy</h3>
+                    <p>After transforming the CENPK2-1C ura3::far1 his2::sst2 trp3::ste2 △ura3 Saccharomyces cerevisiae with plasmid pGADT7 contains part BBa_K2583001, 30℃ cultivate on △leu solid medium for one day. Select monoclonal and enlarge culture overnight, then observe the fluorescence under the microscope with 580nm exciting light. The red fluorescence shows the expression of HRH4-mcherry fusion protein.</p>
+                    
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/a/ab/T--Tsinghua-A--improve-improveFig1.png" alt="" height="700" width="700"/>
+                            <p>Figure1. the fluorescence microscopy result of HRH4-mcherry</p>
+                        </div>
+                    </div>
+                    
+                    <p>In order to find out if HRH4 can be expressed correctly in yeast’s membrane, DIO, a kind of Green fluorescent probe of cell membrane, is add to the yeast. In figure 2, it shows that the most of the red HRH4-mcherry colocalized with DIO in the membrane, it indicates there are quite a few HRH4-mcherry fusion proteins have correct localization. </p>
+                    
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/8/86/T--Tsinghua-A--improve-improveFig2.png" alt="" height="700" width="700"/>
+                            <p>Figure 2. the fluorescence microscopy result of DIO dying and HRH4-mcherry</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Flow CytoMetry (FCM)</h3>
+                    <p>From the result of fluorescence microscopy, the expression of HRH4-mcherry fusion proteins can be observed roughly, for measuring the expression level of HRH4-mcherry, FCM is performed. From the result, a distinct peak value can be observed. Though it can’t representative all the functional HRH4 that locates in the membrane, it can be indicated that most of them are correctly located from the fluorescence microscopy result, this data is enough to support our modeling.</p>
+                    
+                    <div class="img">
+                        <div class="imgcard">
+                            <img src="http://2018.igem.org/wiki/images/8/88/T--Tsinghua-A--improve-improveFig3.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <h2>Result</h2>
+                    <p>The test of this composite part set the foundation of our project, it proved that HRH4 can be expressed in high level under the trigger of a constitutive promoter-ADH1 promoter. Besides, the HRH4 can locate in the yeasts’ membrane without adding other sequence. It can be indicated that if mcherry is removed, functional HRH4 can still be expressed and locate in the membrane.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- page-content -->
+
+        <!-- footer -->
+        <div class="footer pagefooter">
+            <div class="footer-left-col">
+                <a href="index.html"><img src="http://2018.igem.org/wiki/images/6/6e/T--Tsinghua-A--logo1.png" alt="" height="200" width="400"/> </a>
+            </div>
+            <div class="footer-right-col">
+                <p> Contact us </p>
+                <ul class="contact-info">
+                    <li>Mentor E-mail: <a href="mailto:au_wang@foxmail.com" id="mailto">au_wang@foxmail.com</a></li>
+                    <li> E-mail: <a href="mailto:igem2018_thua@163.com" id="mailto">igem2018_thua@163.com</a> </li>
+                    <li> Phone: +86 010-62796050 </li>
+                    <li> WeChat: yqyntx98 </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- footer -->
+
+        <!-- toTopHover -->
+        <script type="text/javascript">
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- toTopHover -->
+    </body>
+                </html>
