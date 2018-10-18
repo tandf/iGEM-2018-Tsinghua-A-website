@@ -107,12 +107,12 @@ div.content div.page-content .col2{
 div.content div.page-content .col2 + .col2{
     margin-left: 4%;
 }
-div.content div.page-content .col3{
+div.content div.page-content div.col3{
     width: 32%;
     margin: 10px 0;
     float: left;
 }
-div.content div.page-content .col3 + .col3{
+div.content div.page-content div.col3 + div.col3{
     margin-left: 2%;
 }
 
