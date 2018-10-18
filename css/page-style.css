@@ -206,12 +206,12 @@ div.attributionItem{
     font-size: 20px;
     margin: 20px 0;
 }
-div.attributionItem div span.name{
+div.attributionItem div .name{
     font-style: italic;
     font-weight: 700;
     color: black;
 }
-div.attributionItem span.org{
+div.attributionItem div .org{
     font-weight: 700;
 }
 div.attributionItem div span.name + span.org{
